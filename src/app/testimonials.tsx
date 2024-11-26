@@ -39,15 +39,14 @@ export function Testimonials() {
             <UserIcon className="h-6 w-6" />
           </div>
           <Typography variant="h2" color="blue-gray" className="mb-2">
-            What Clients Say
+            What CarSnap Users Say
           </Typography>
           <Typography
             variant="lead"
             className="mb-10 max-w-3xl text-center !text-gray-600"
           >
-            Discover what our valued clients have to say about their experiences
-            with our services. We take pride in delivering exceptional results
-            and fostering lasting partnerships.
+            We take pride in providing a simple, easy, and elegant car browsing
+            experience for our users! Hear what they have to say about us.
           </Typography>
         </div>
         <div className="grid grid-cols-1 gap-x-8 gap-y-12 md:grid-cols-3 lg:px-20">

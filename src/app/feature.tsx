@@ -4,38 +4,38 @@ import React from "react";
 import { Typography } from "@material-tailwind/react";
 
 import {
-  CursorArrowRaysIcon,
-  HeartIcon,
-  LightBulbIcon,
-  LockClosedIcon,
+  MagnifyingGlassIcon,
+  ClipboardDocumentListIcon,
+  PlayCircleIcon,
+  CurrencyDollarIcon,
 } from "@heroicons/react/24/solid";
 
 import FeatureCard from "../components/feature-card";
 
 const FEATURES = [
   {
-    icon: CursorArrowRaysIcon,
-    title: "Expert Instructors",
+    icon: MagnifyingGlassIcon,
+    title: "Listings",
     children:
-      "Learn from the best. Our instructors are industry experts, academics, and seasoned professionals dedicated to helping you.",
+      "CarSnap shows you local listings of each car you snap a photo of. No need to utilize multiple platforms to find the car you want.",
   },
   {
-    icon: HeartIcon,
-    title: "Interactive Learning",
+    icon: ClipboardDocumentListIcon,
+    title: "Specifications",
     children:
-      "Engage with interactive quizzes, hands-on exercises, and discussion forums to reinforce your understanding and connect.",
+      "CarSnap displays the important specifications of each car you snap a photo of. View engine specs, interior features, fuel economy, and more.",
   },
   {
-    icon: LockClosedIcon,
-    title: "Achievement Unlocked",
+    icon: PlayCircleIcon,
+    title: "Article and Video Reviews",
     children:
-      "Earn certificates and badges as you complete courses, showcasing your newfound skills to the world.",
+      "We know it can be hard to make a decision based on a photo. That's why we provide you with articles and videos of each car you snap a photo of from popular creators and publishers across the web.",
   },
   {
-    icon: LightBulbIcon,
-    title: "Personalized Progress Tracking",
+    icon: CurrencyDollarIcon,
+    title: "Value Estimates",
     children:
-      "Stay on top of your learning journey with progress tracking and personalized recommendations to keep you motivated.",
+      "CarSnap allows you to store information about your own car and uses our AI-models to make private-sale and dealer trade-in value estimates.",
   },
 ];
 
@@ -44,18 +44,17 @@ export function Features() {
     <section className="py-28 px-4">
       <div className="container mx-auto mb-20 text-center">
         <Typography color="blue-gray" className="mb-2 font-bold uppercase">
-          Your Learning App
+          Make Guessing and Searching a Thing of the Past
         </Typography>
         <Typography variant="h1" color="blue-gray" className="mb-4">
-          Diverse Learning Resources
+          Just Snap a Photo
         </Typography>
         <Typography
           variant="lead"
           className="mx-auto w-full px-4 !text-gray-500 lg:w-11/12 lg:px-8 "
         >
-          Access your learning materials on the go. Whether you&apos;re
-          commuting, waiting for a friend, or just have a few minutes to spare,
-          our app fits seamlessly into your busy life.
+          We use state-of-the-art AI models to determine the make, model, and
+          year of a car from a single photo.
         </Typography>
       </div>
       <div className="container mx-auto grid max-w-6xl grid-cols-1 gap-4 gap-y-12 md:grid-cols-2">
