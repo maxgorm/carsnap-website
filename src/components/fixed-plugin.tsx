@@ -1,24 +1,27 @@
-"use client";
-import Image from "next/image";
 import { Button } from "@material-tailwind/react";
+import Image from "next/image";
 
 export function FixedPlugin() {
   return (
-    <a href="https://www.material-tailwind.com" target="_blank">
+    <a href="https://www.material-tailwind.com" target="_blank" rel="noopener noreferrer">
+      {/* @ts-ignore - Material Tailwind typing issues */}
       <Button
         color="white"
         size="sm"
         className="!fixed bottom-4 right-4 flex gap-1 pl-2 items-center border border-blue-gray-50"
       >
-        <Image
-          width={128}
-          height={128}
-          className="w-5 h-5"
-          alt="Material Tailwind"
-          src="https://www.material-tailwind.com/favicon.png"
-        />{" "}
-        Made With Material Tailwind
+        <div className="relative h-5 w-5">
+          <Image
+            src="https://www.material-tailwind.com/favicon.png"
+            alt="Material Tailwind"
+            fill
+            sizes="20px"
+          />
+        </div>{" "}
+        Made with Material Tailwind
       </Button>
     </a>
   );
 }
+
+export default FixedPlugin;

@@ -1,12 +1,16 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
-import { Layout } from "@/components";
+import { Layout } from "@/components/layout";
 
 const roboto = Roboto({
   subsets: ["latin"],
   weight: ["300", "400", "500", "700", "900"],
   display: "swap",
+  preload: true,
+  fallback: ["system-ui", "arial", "sans-serif"],
+  adjustFontFallback: true,
+  variable: "--font-roboto",
 });
 
 export const metadata: Metadata = {

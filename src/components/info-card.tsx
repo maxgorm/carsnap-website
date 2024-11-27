@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Typography, Card, CardBody } from "@material-tailwind/react";
 
 interface InfoCardProps {
@@ -7,15 +5,20 @@ interface InfoCardProps {
   children: React.ReactNode;
 }
 
-
 export function InfoCard({ title, children }: InfoCardProps) {
   return (
+    // @ts-ignore - Material Tailwind typing issues
     <Card color="transparent" shadow={false}>
+      {/* @ts-ignore - Material Tailwind typing issues */}
       <CardBody className="grid px-0">
+        {/* @ts-ignore - Material Tailwind typing issues */}
         <Typography variant="h2" color="blue-gray" className="mb-2">
           {title}
         </Typography>
-        <Typography className=" font-normal">{children}</Typography>
+        {/* @ts-ignore - Material Tailwind typing issues */}
+        <Typography className="font-normal !text-gray-500">
+          {children}
+        </Typography>
       </CardBody>
     </Card>
   );
