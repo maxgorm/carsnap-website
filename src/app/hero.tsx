@@ -27,6 +27,7 @@ function Hero() {
                 size="lg"
                 color="white"
                 className="flex justify-center items-center gap-3"
+                onClick={() => window.open('https://apps.apple.com/us/app/car-hunter/id6478634228', '_blank')}
               >
                 <Image
                   width={256}
@@ -41,6 +42,7 @@ function Hero() {
                 size="lg"
                 color="white"
                 className="flex justify-center items-center gap-3"
+                onClick={() => window.open('https://play.google.com/store/apps/details?id=com.maxgorm.carhunter', '_blank')}
               >
                 <Image
                   width={256}

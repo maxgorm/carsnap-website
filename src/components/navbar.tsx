@@ -97,6 +97,7 @@ export function Navbar() {
           </NavItem>
         </ul>
         <div className="hidden gap-2 lg:flex lg:items-center">
+          {/* Social Media Icons - Desktop
           <IconButton
             variant="text"
             color={isScrolling ? "gray" : "white"}
@@ -127,7 +128,8 @@ export function Navbar() {
           >
             <i className="fa-brands fa-instagram text-base" />
           </IconButton>
-          <a href="https://www.material-tailwind.com/blocks" target="_blank" rel="noopener noreferrer">
+          */}
+          {/* <a href="https://www.material-tailwind.com/blocks" target="_blank" rel="noopener noreferrer">
             <Button 
               color={isScrolling ? "gray" : "white"} 
               size="sm"
@@ -137,7 +139,7 @@ export function Navbar() {
             >
               Blocks
             </Button>
-          </a>
+          </a> */}
         </div>
         <IconButton
           variant="text"
@@ -164,6 +166,7 @@ export function Navbar() {
             </NavItem>
           </ul>
           <div className="mt-4 flex items-center gap-2">
+            {/* Social Media Icons - Mobile
             <IconButton 
               variant="text" 
               color="gray" 
@@ -194,6 +197,7 @@ export function Navbar() {
             >
               <i className="fa-brands fa-instagram text-base" />
             </IconButton>
+            */}
             <a href="https://www.material-tailwind.com/blocks" target="_blank" rel="noopener noreferrer">
               <Button 
                 color="gray" 

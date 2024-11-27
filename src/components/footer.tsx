@@ -49,6 +49,7 @@ export function Footer() {
               <Button
                 color="white"
                 className="flex items-center justify-center"
+                onClick={() => window.open('https://apps.apple.com/us/app/car-hunter/id6478634228', '_blank')}
               >
                 <Image
                   width={256}
@@ -62,6 +63,7 @@ export function Footer() {
               <Button
                 color="white"
                 className="flex items-center justify-center"
+                onClick={() => window.open('https://play.google.com/store/apps/details?id=com.maxgorm.carhunter', '_blank')}
               >
                 <Image
                   width={256}
@@ -82,13 +84,14 @@ export function Footer() {
           >
             &copy; {CURRENT_YEAR} Made using{" "}
             
-            <a href="https://en.wikipedia.org/wiki/MIT_License" target="_blank">
+            <a href="https://en.wikipedia.org/wiki/MIT_License" target="_blank" rel="noopener">
               MIT License
             </a>
             .
           </Typography>
 
           <div className="flex gap-2">
+            {/* Social Media Icons
             <IconButton variant="text" color="white">
               <i className="fa-brands fa-twitter text-2xl not-italic opacity-75"></i>
             </IconButton>
@@ -104,6 +107,7 @@ export function Footer() {
             <IconButton variant="text" color="white">
               <i className="fa-brands fa-dribbble text-2xl not-italic opacity-75"></i>
             </IconButton>
+            */}
           </div>
         </div>
       </div>
