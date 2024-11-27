@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { Typography, IconButton, Button } from "@material-tailwind/react";
 
-const LINKS = []; //"About Us", "Careers", "Press", "Blog", "Pricing"
+const LINKS: string[] = []; //"About Us", "Careers", "Press", "Blog", "Pricing"
 const CURRENT_YEAR = new Date().getFullYear();
 
 export function Footer() {
@@ -18,10 +18,35 @@ export function Footer() {
               variant="h5"
               color="white"
               className="mb-4"
+              placeholder=""
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
+              translate="no"
+              slot=""
+              style={{}}
+              title=""
+              onClick={() => {}}
+              type=""
+              defaultChecked={false}
+              defaultValue=""
             >
               CarSnap
             </Typography>
-            <Typography color="white" className="mb-12 font-normal">
+            <Typography 
+              color="white" 
+              className="mb-12 font-normal"
+              placeholder=""
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
+              translate="no"
+              slot=""
+              style={{}}
+              title=""
+              onClick={() => {}}
+              type=""
+              defaultChecked={false}
+              defaultValue=""
+            >
               AI Enhanced Car Browsing
             </Typography>
             <ul className="flex flex-wrap items-center justify-center md:justify-start">
@@ -34,6 +59,17 @@ export function Footer() {
                     className={`py-1 font-medium transition-colors ${
                       idx === 0 ? "pr-3" : "px-3"
                     }`}
+                    placeholder=""
+                    onPointerEnterCapture={() => {}}
+                    onPointerLeaveCapture={() => {}}
+                    translate="no"
+                    slot=""
+                    style={{}}
+                    title=""
+                    onClick={() => {}}
+                    type=""
+                    defaultChecked={false}
+                    defaultValue=""
                   >
                     {link}
                   </Typography>
@@ -42,7 +78,22 @@ export function Footer() {
             </ul>
           </div>
           <div className="mt-8 w-full md:mt-0 md:w-auto">
-            <Typography variant="h6" color="white" className="mb-3">
+            <Typography 
+              variant="h6" 
+              color="white" 
+              className="mb-3"
+              placeholder=""
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
+              translate="no"
+              slot=""
+              style={{}}
+              title=""
+              onClick={() => {}}
+              type=""
+              defaultChecked={false}
+              defaultValue=""
+            >
               Get the app
             </Typography>
             <div className="flex flex-col gap-2">
@@ -50,6 +101,16 @@ export function Footer() {
                 color="white"
                 className="flex items-center justify-center"
                 onClick={() => window.open('https://apps.apple.com/us/app/car-hunter/id6478634228', '_blank')}
+                placeholder=""
+                onPointerEnterCapture={() => {}}
+                onPointerLeaveCapture={() => {}}
+                translate="no"
+                slot=""
+                style={{}}
+                title=""
+                type="button"
+                defaultChecked={false}
+                defaultValue=""
               >
                 <Image
                   width={256}
@@ -64,6 +125,16 @@ export function Footer() {
                 color="white"
                 className="flex items-center justify-center"
                 onClick={() => window.open('https://play.google.com/store/apps/details?id=com.maxgorm.carhunter', '_blank')}
+                placeholder=""
+                onPointerEnterCapture={() => {}}
+                onPointerLeaveCapture={() => {}}
+                translate="no"
+                slot=""
+                style={{}}
+                title=""
+                type="button"
+                defaultChecked={false}
+                defaultValue=""
               >
                 <Image
                   width={256}
@@ -81,6 +152,17 @@ export function Footer() {
           <Typography
             color="white"
             className="text-center font-normal opacity-75"
+            placeholder=""
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
+            translate="no"
+            slot=""
+            style={{}}
+            title=""
+            onClick={() => {}}
+            type=""
+            defaultChecked={false}
+            defaultValue=""
           >
             &copy; {CURRENT_YEAR} Made using{" "}
             

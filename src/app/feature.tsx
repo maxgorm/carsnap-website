@@ -43,15 +43,40 @@ export function Features() {
   return (
     <section className="py-28 px-4">
       <div className="container mx-auto mb-20 text-center">
-        <Typography color="blue-gray" className="mb-2 font-bold uppercase">
+        <Typography 
+          color="blue-gray" 
+          className="mb-2 font-bold uppercase"
+          placeholder=""
+          onPointerEnterCapture={() => {}}
+          onPointerLeaveCapture={() => {}}
+          title=""
+          slot=""
+          style={{}}
+        >
           Make Guessing and Searching a Thing of the Past
         </Typography>
-        <Typography variant="h1" color="blue-gray" className="mb-4">
+        <Typography 
+          variant="h1" 
+          color="blue-gray" 
+          className="mb-4"
+          placeholder=""
+          onPointerEnterCapture={() => {}}
+          onPointerLeaveCapture={() => {}}
+          title=""
+          slot=""
+          style={{}}
+        >
           Just Snap a Photo
         </Typography>
         <Typography
           variant="lead"
-          className="mx-auto w-full px-4 !text-gray-500 lg:w-11/12 lg:px-8 "
+          className="mx-auto w-full px-4 !text-gray-500 lg:w-11/12 lg:px-8"
+          placeholder=""
+          onPointerEnterCapture={() => {}}
+          onPointerLeaveCapture={() => {}}
+          title=""
+          slot=""
+          style={{}}
         >
           We use state-of-the-art AI models to determine the make, model, and
           year of a car from a single photo.

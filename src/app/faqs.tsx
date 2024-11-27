@@ -21,7 +21,6 @@ const FAQS = [
     title: "Where do your source your specifications and value estimates from?",
     desc: "We use established AI models to determine the specifications and value estimates of each car. These models are trained on a variety of data sources and are constantly updated to provide the most accurate information.",
   },
-  
 ];
 
 export function Faqs() {
@@ -29,27 +28,101 @@ export function Faqs() {
     <section className="px-8 py-20">
       <div className="container max-w-6xl mx-auto">
         <div className="text-center">
-          <Typography variant="h1" color="blue-gray" className="mb-4">
+          <Typography 
+            variant="h1" 
+            color="blue-gray" 
+            className="mb-4"
+            placeholder=""
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
+            suppressHydrationWarning={false}
+            id=""
+            lang=""
+            media=""
+            style={{}}
+            target=""
+            type=""
+            role=""
+            tabIndex={0}
+            href=""
+          >
             Frequently asked questions
           </Typography>
           <Typography
             variant="lead"
             className="mx-auto mb-24 !text-gray-500 lg:w-3/5"
+            placeholder=""
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
+            suppressHydrationWarning={false}
+            id=""
+            lang=""
+            media=""
+            style={{}}
+            target=""
+            type=""
+            role=""
+            tabIndex={0}
+            href=""
           >
             See answers to our most common questions, or feel free to contact
             us via our in-app contact button to ask your own questions.
-            
           </Typography>
         </div>
 
         <div className="grid gap-20 md:grid-cols-1 lg:grid-cols-3">
           {FAQS.map(({ title, desc }) => (
-            <Card key={title} shadow={false} color="transparent">
-              <Typography color="blue-gray" className="pb-6" variant="h4">
+            <Card 
+              key={title} 
+              shadow={false} 
+              color="transparent"
+              placeholder=""
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
+              suppressHydrationWarning={false}
+              id=""
+              lang=""
+              style={{}}
+              role=""
+              tabIndex={0}
+            >
+              <Typography 
+                color="blue-gray" 
+                className="pb-6" 
+                variant="h4"
+                placeholder=""
+                onPointerEnterCapture={() => {}}
+                onPointerLeaveCapture={() => {}}
+                suppressHydrationWarning={false}
+                id=""
+                lang=""
+                media=""
+                style={{}}
+                target=""
+                type=""
+                role=""
+                tabIndex={0}
+                href=""
+              >
                 {title}
               </Typography>
               <div className="pt-2">
-                <Typography className="font-normal !text-gray-500">
+                <Typography 
+                  className="font-normal !text-gray-500"
+                  placeholder=""
+                  onPointerEnterCapture={() => {}}
+                  onPointerLeaveCapture={() => {}}
+                  suppressHydrationWarning={false}
+                  id=""
+                  lang=""
+                  media=""
+                  style={{}}
+                  target=""
+                  type=""
+                  role=""
+                  tabIndex={0}
+                  href=""
+                >
                   {desc}
                 </Typography>
               </div>
