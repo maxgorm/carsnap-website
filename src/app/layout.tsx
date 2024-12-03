@@ -14,9 +14,9 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "NextJS Tailwind App Presentation Page",
+  title: "CarSnap",
   description:
-    "We are thrilled to offer you a Free App Presentation Template, a beautifully designed and user-friendly Tailwind CSS and Material Tailwind theme crafted specifically for app developers like you. The free app presentation template includes key features such as hero, features, FAQ, stats, and testimonial sections.",
+    "CarSnap is a car recognition app that uses machine learning to identify car models from images and allow you to view relevant information for them, such as reviews, specifications, local listings, and more!",
 };
 
 export default function RootLayout({
@@ -34,7 +34,7 @@ export default function RootLayout({
           crossOrigin="anonymous"
           referrerPolicy="no-referrer"
         />
-        <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+        <link rel="shortcut icon" href="/favicon-32x32.png" type="image/png" />
       </head>
       <body className={roboto.className}>
         <Layout>
