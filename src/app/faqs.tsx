@@ -6,7 +6,8 @@ import { Typography, Card } from "@material-tailwind/react";
 const FAQS = [
   {
     title: "Is CarSnap free to use?",
-    desc: "CarSnap is 100% free to use. There are no paid features or premium plans. Simply download on iOS or Android and start snapping! *Advertisements may be present in the app.",
+    desc: "CarSnap is 100% free to use. There are no paid features or premium plans. Simply download on iOS or Android and start snapping!",
+    additionalInfo: "*Advertisements may be present in the app."
   },
   {
     title: "Where do you source your listings from?",
@@ -40,7 +41,7 @@ export function Faqs() {
         </div>
 
         <div className="grid gap-20 md:grid-cols-1 lg:grid-cols-3">
-          {FAQS.map(({ title, desc }) => (
+          {FAQS.map(({ title, desc, additionalInfo }) => (
             <Card 
               key={title} 
               shadow={false} 
@@ -57,6 +58,11 @@ export function Faqs() {
               <Typography className="font-normal !text-gray-500">
                 {desc}
               </Typography>
+              {additionalInfo && (
+                <Typography className="mt-2 font-normal !text-gray-500">
+                  {additionalInfo}
+                </Typography>
+              )}
             </Card>
           ))}
         </div>
