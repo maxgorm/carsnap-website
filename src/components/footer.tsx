@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { Typography, Button } from "@material-tailwind/react";
+import Link from "next/link";
 
 const LINKS: string[] = [];
 const CURRENT_YEAR = new Date().getFullYear();
@@ -94,8 +95,11 @@ export function Footer() {
             &copy; {CURRENT_YEAR} Made using{" "}
             <a href="https://en.wikipedia.org/wiki/MIT_License" target="_blank" rel="noopener">
               MIT License
-            </a>
-            .
+            </a>{" "}
+            |{" "}
+            <Link href="/legal" className="hover:text-blue-400 transition-colors">
+              Terms of Use
+            </Link>
           </Typography>
 
           <div className="flex gap-2">

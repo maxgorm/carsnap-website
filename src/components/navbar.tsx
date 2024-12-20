@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import {
   Navbar as MTNavbar,
   Collapse,
@@ -13,9 +14,29 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 interface NavItemProps {
   children: React.ReactNode;
   href?: string;
+  internal?: boolean;
 }
 
-function NavItem({ children, href }: NavItemProps) {
+function NavItem({ children, href, internal }: NavItemProps) {
+  const content = (
+    <Typography
+      variant="small"
+      className="font-medium"
+    >
+      {children}
+    </Typography>
+  );
+
+  if (internal) {
+    return (
+      <li>
+        <Link href={href || "/"}>
+          {content}
+        </Link>
+      </li>
+    );
+  }
+
   return (
     <li>
       <Typography
@@ -62,7 +83,10 @@ export function Navbar() {
   }, []);
 
   const navItems = (
-    <><NavItem>Home</NavItem><NavItem href="https://carhunterlegal.carrd.co/">Terms of Use</NavItem></>
+    <>
+      <NavItem internal href="/">Home</NavItem>
+      <NavItem internal href="/legal">Terms of Use</NavItem>
+    </>
   );
 
   return (
@@ -76,9 +100,7 @@ export function Navbar() {
       <div className="container mx-auto flex items-center justify-between">
         <Typography
           as="a"
-          href="https://www.material-tailwind.com"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="/"
           variant="h6"
           color={isScrolling ? "gray" : "white"}
         >
@@ -111,14 +133,6 @@ export function Navbar() {
             <i className="fa-brands fa-instagram text-base" />
           </IconButton>
           */}
-          {/* <a href="https://www.material-tailwind.com/blocks" target="_blank" rel="noopener noreferrer">
-            <Button 
-              color={isScrolling ? "gray" : "white"} 
-              size="sm"
-            >
-              Blocks
-            </Button>
-          </a> */}
         </div>
         <IconButton
           variant="text"
@@ -160,15 +174,6 @@ export function Navbar() {
               <i className="fa-brands fa-instagram text-base" />
             </IconButton>
             */}
-            <a href="https://www.material-tailwind.com/blocks" target="_blank" rel="noopener noreferrer">
-              <Button 
-                color="gray" 
-                size="sm" 
-                className="ml-auto"
-              >
-                Blocks
-              </Button>
-            </a>
           </div>
         </div>
       </Collapse>
