@@ -7,21 +7,24 @@ import {
   Collapse,
   IconButton,
   Typography,
-  Button,
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+
+type MaterialColor = "blue-gray" | "gray" | "brown" | "deep-orange" | "orange" | "amber" | "yellow" | "lime" | "light-green" | "green" | "teal" | "cyan" | "light-blue" | "blue" | "indigo" | "deep-purple" | "purple" | "pink" | "red" | "white" | "black";
 
 interface NavItemProps {
   children: React.ReactNode;
   href?: string;
   internal?: boolean;
+  color?: MaterialColor;
 }
 
-function NavItem({ children, href, internal }: NavItemProps) {
+function NavItem({ children, href, internal, color }: NavItemProps) {
   const content = (
     <Typography
       variant="small"
       className="font-medium"
+      color={color}
     >
       {children}
     </Typography>
@@ -46,6 +49,7 @@ function NavItem({ children, href, internal }: NavItemProps) {
         rel={href ? "noopener noreferrer" : undefined}
         variant="small"
         className="font-medium"
+        color={color}
       >
         {children}
       </Typography>
@@ -53,13 +57,58 @@ function NavItem({ children, href, internal }: NavItemProps) {
   );
 }
 
+function ClientNavbar({ isScrolling, open, onOpenChange, children }: { 
+  isScrolling: boolean;
+  open: boolean;
+  onOpenChange: () => void;
+  children: React.ReactNode;
+}) {
+  return (
+    <MTNavbar
+      fullWidth
+      shadow={false}
+      blurred={false}
+      color={isScrolling ? "white" : "transparent"}
+      className="fixed top-0 z-50 border-0"
+    >
+      <div className="container mx-auto flex items-center justify-between">
+        <Typography
+          as="a"
+          href="/"
+          variant="h6"
+          color={isScrolling ? "gray" : "white"}
+        >
+          CarSnap
+        </Typography>
+        {children}
+        <IconButton
+          variant="text"
+          color={isScrolling ? "gray" : "white"}
+          onClick={onOpenChange}
+          className="ml-auto inline-block lg:hidden"
+        >
+          {open ? (
+            <XMarkIcon strokeWidth={2} className="h-6 w-6" />
+          ) : (
+            <Bars3Icon strokeWidth={2} className="h-6 w-6" />
+          )}
+        </IconButton>
+      </div>
+      <Collapse open={open}>
+        <div className="container mx-auto mt-4 rounded-lg border-t border-blue-gray-50 bg-white px-6 py-5">
+          <ul className="flex flex-col gap-4 text-blue-gray-900">
+            <NavItem internal href="/" color="gray">Home</NavItem>
+            <NavItem internal href="/legal" color="gray">Terms of Use</NavItem>
+          </ul>
+        </div>
+      </Collapse>
+    </MTNavbar>
+  );
+}
+
 export function Navbar() {
   const [open, setOpen] = React.useState(false);
   const [isScrolling, setIsScrolling] = React.useState(false);
-
-  function handleOpen() {
-    setOpen((cur) => !cur);
-  }
 
   React.useEffect(() => {
     window.addEventListener(
@@ -78,105 +127,23 @@ export function Navbar() {
     }
 
     window.addEventListener("scroll", handleScroll);
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navItems = (
-    <>
-      <NavItem internal href="/">Home</NavItem>
-      <NavItem internal href="/legal">Terms of Use</NavItem>
-    </>
-  );
+  const handleOpen = () => setOpen((cur) => !cur);
 
   return (
-    <MTNavbar
-      fullWidth
-      shadow={false}
-      blurred={false}
-      color={isScrolling ? "white" : "transparent"}
-      className="fixed top-0 z-50 border-0"
+    <ClientNavbar 
+      isScrolling={isScrolling}
+      open={open}
+      onOpenChange={handleOpen}
     >
-      <div className="container mx-auto flex items-center justify-between">
-        <Typography
-          as="a"
-          href="/"
-          variant="h6"
-          color={isScrolling ? "gray" : "white"}
-        >
-          CarSnap
-        </Typography>
-        <ul className={`ml-10 hidden items-center gap-6 lg:flex ${
-          isScrolling ? "text-gray-900" : "text-white"
-        }`}>{navItems}</ul>
-        <div className="hidden gap-2 lg:flex lg:items-center">
-          {/* Social Media Icons - Desktop
-          <IconButton
-            variant="text"
-            color={isScrolling ? "gray" : "white"}
-            size="sm"
-          >
-            <i className="fa-brands fa-twitter text-base" />
-          </IconButton>
-          <IconButton
-            variant="text"
-            color={isScrolling ? "gray" : "white"}
-            size="sm"
-          >
-            <i className="fa-brands fa-facebook text-base" />
-          </IconButton>
-          <IconButton
-            variant="text"
-            color={isScrolling ? "gray" : "white"}
-            size="sm"
-          >
-            <i className="fa-brands fa-instagram text-base" />
-          </IconButton>
-          */}
-        </div>
-        <IconButton
-          variant="text"
-          color={isScrolling ? "gray" : "white"}
-          onClick={handleOpen}
-          className="ml-auto inline-block lg:hidden"
-        >
-          {open ? (
-            <XMarkIcon strokeWidth={2} className="h-6 w-6" />
-          ) : (
-            <Bars3Icon strokeWidth={2} className="h-6 w-6" />
-          )}
-        </IconButton>
-      </div>
-      <Collapse open={open}>
-        <div className="container mx-auto mt-4 rounded-lg border-t border-blue-gray-50 bg-white px-6 py-5">
-          <ul className="flex flex-col gap-4 text-blue-gray-900">{navItems}</ul>
-          <div className="mt-4 flex items-center gap-2">
-            {/* Social Media Icons - Mobile
-            <IconButton 
-              variant="text" 
-              color="gray" 
-              size="sm"
-            >
-              <i className="fa-brands fa-twitter text-base" />
-            </IconButton>
-            <IconButton 
-              variant="text" 
-              color="gray" 
-              size="sm"
-            >
-              <i className="fa-brands fa-facebook text-base" />
-            </IconButton>
-            <IconButton 
-              variant="text" 
-              color="gray" 
-              size="sm"
-            >
-              <i className="fa-brands fa-instagram text-base" />
-            </IconButton>
-            */}
-          </div>
-        </div>
-      </Collapse>
-    </MTNavbar>
+      <ul className={`ml-10 hidden items-center gap-6 lg:flex ${
+        isScrolling ? "text-gray-900" : "text-white"
+      }`}>
+        <NavItem internal href="/">Home</NavItem>
+        <NavItem internal href="/legal">Terms of Use</NavItem>
+      </ul>
+    </ClientNavbar>
   );
 }
