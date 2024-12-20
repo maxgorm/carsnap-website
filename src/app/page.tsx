@@ -1,9 +1,7 @@
 "use client";
 
-// components
+import { ClientLayout } from "@/components/client-layout";
 import { Navbar, Footer } from "@/components";
-
-// sections
 import { Hero } from "./hero";
 import { VideoIntro } from "./video-intro";
 import { Features } from "./feature";
@@ -13,7 +11,7 @@ import { Faqs } from "./faqs";
 
 export default function Campaign() {
   return (
-    <>
+    <ClientLayout>
       <Navbar />
       <Hero />
       {/* <VideoIntro /> */}
@@ -22,6 +20,6 @@ export default function Campaign() {
       {/* <Testimonials /> */}
       <Faqs />
       <Footer />
-    </>
+    </ClientLayout>
   );
 }
