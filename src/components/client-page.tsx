@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { MaterialWrapper } from "./material-wrapper";
 import { Navbar } from "./navbar";
 import { Footer } from "./footer";
 import { Hero } from "../app/hero";
@@ -32,12 +33,14 @@ export default function ClientPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-900">
-      <Navbar />
-      <Hero />
-      <Features />
-      <Faqs />
-      <Footer />
-    </div>
+    <MaterialWrapper>
+      <div className="min-h-screen bg-gray-900">
+        <Navbar />
+        <Hero />
+        <Features />
+        <Faqs />
+        <Footer />
+      </div>
+    </MaterialWrapper>
   );
 }

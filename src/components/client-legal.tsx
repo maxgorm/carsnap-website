@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { MaterialWrapper } from "./material-wrapper";
 import { Navbar } from "./navbar";
 import { Footer } from "./footer";
 import { LegalContent } from "../app/legal/components/legal-content";
@@ -30,10 +31,12 @@ export default function ClientLegal() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-900">
-      <Navbar />
-      <LegalContent />
-      <Footer />
-    </div>
+    <MaterialWrapper>
+      <div className="min-h-screen bg-gray-900">
+        <Navbar />
+        <LegalContent />
+        <Footer />
+      </div>
+    </MaterialWrapper>
   );
 }
