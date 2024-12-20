@@ -41,30 +41,30 @@ const FEATURES = [
 
 export function Features() {
   return (
-    <section className="py-28 px-4">
+    <section className="py-28 px-4 bg-white">
       <div className="container mx-auto mb-20 text-center">
         <Typography 
           color="blue-gray" 
-          className="mb-2 font-bold uppercase"
+          className="mb-2 font-bold uppercase text-lg tracking-wider text-blue-500"
         >
-          Make Guessing and Searching a Thing of the Past
+          Features
         </Typography>
         <Typography 
-          variant="h1" 
+          variant="h2" 
           color="blue-gray" 
-          className="mb-4"
+          className="mb-4 text-3xl md:text-4xl font-bold"
         >
-          Just Snap a Photo
+          Everything You Need
         </Typography>
         <Typography
           variant="lead"
-          className="mx-auto w-full px-4 !text-gray-500 lg:w-11/12 lg:px-8"
+          className="mx-auto w-full px-4 text-gray-700 text-lg lg:w-11/12 lg:px-8"
         >
-          We use state-of-the-art AI models to determine the make, model, and
-          year of a car from a single photo.
+          From finding local listings to getting detailed specifications,
+          CarSnap provides all the information you need about any car.
         </Typography>
       </div>
-      <div className="container mx-auto grid max-w-6xl grid-cols-1 gap-4 gap-y-12 md:grid-cols-2">
+      <div className="container mx-auto grid max-w-6xl grid-cols-1 gap-8 gap-y-12 md:grid-cols-2">
         {FEATURES.map((props, idx) => (
           <FeatureCard key={idx} {...props} />
         ))}
