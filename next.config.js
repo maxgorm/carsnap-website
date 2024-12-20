@@ -2,12 +2,6 @@
 const nextConfig = {
   transpilePackages: ['@material-tailwind/react'],
   swcMinify: true,
-  modularizeImports: {
-    '@material-tailwind/react': {
-      transform: '@material-tailwind/react/{{member}}',
-      skipDefaultConversion: true
-    }
-  },
   webpack: (config, { isServer }) => {
     // Add resolve fallback for client-side dependencies
     if (!isServer) {
