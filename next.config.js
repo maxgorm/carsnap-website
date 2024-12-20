@@ -1,15 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',  // Force static site generation
-  images: {
-    unoptimized: true,  // Required for static export
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "**",
-      },
-    ],
-  },
+  transpilePackages: ['@material-tailwind/react'],
+  webpack: (config) => {
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      '@material-tailwind/react': require.resolve('@material-tailwind/react'),
+    };
+    return config;
+  }
 };
 
 module.exports = nextConfig;

@@ -6,7 +6,6 @@ import { Footer } from "./footer";
 import { Hero } from "../app/hero";
 import { Features } from "../app/feature";
 import { Faqs } from "../app/faqs";
-import { ThemeLayout } from "./theme-layout";
 
 export default function ClientPage() {
   const [mounted, setMounted] = useState(false);
@@ -33,12 +32,12 @@ export default function ClientPage() {
   }
 
   return (
-    <ThemeLayout>
+    <div className="min-h-screen bg-gray-900">
       <Navbar />
       <Hero />
       <Features />
       <Faqs />
       <Footer />
-    </ThemeLayout>
+    </div>
   );
 }

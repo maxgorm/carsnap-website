@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import { Navbar } from "./navbar";
 import { Footer } from "./footer";
 import { LegalContent } from "../app/legal/components/legal-content";
-import { ThemeLayout } from "./theme-layout";
 
 export default function ClientLegal() {
   const [mounted, setMounted] = useState(false);
@@ -31,10 +30,10 @@ export default function ClientLegal() {
   }
 
   return (
-    <ThemeLayout>
+    <div className="min-h-screen bg-gray-900">
       <Navbar />
       <LegalContent />
       <Footer />
-    </ThemeLayout>
+    </div>
   );
 }

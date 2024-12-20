@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
+import { MaterialTailwindProvider } from "@/components/material-tailwind-provider";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -31,7 +32,9 @@ export default function RootLayout({
         />
         <link rel="shortcut icon" href="/favicon-32x32.png" type="image/png" />
       </head>
-      <body className={roboto.className}>{children}</body>
+      <body className={roboto.className}>
+        <MaterialTailwindProvider>{children}</MaterialTailwindProvider>
+      </body>
     </html>
   );
 }
