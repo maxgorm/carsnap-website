@@ -1,21 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
-import dynamic from 'next/dynamic';
-
-const MaterialTailwindProvider = dynamic(
-  () => import('@/components/material-tailwind-provider').then(mod => mod.MaterialTailwindProvider),
-  {
-    ssr: false,
-    loading: () => (
-      <div className="min-h-screen bg-gray-900">
-        <div className="container mx-auto px-4 py-16">
-          <h1 className="text-white text-4xl font-bold text-center">Loading...</h1>
-        </div>
-      </div>
-    )
-  }
-);
+import { MaterialTailwindProvider } from "@/components/material-tailwind-provider";
 
 const roboto = Roboto({
   subsets: ["latin"],
