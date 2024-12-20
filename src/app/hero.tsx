@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { Button, Typography } from "@material-tailwind/react";
 
-function Hero() {
+export function Hero() {
   return (
     <div className="relative min-h-screen w-full">
       <header className="grid !min-h-[49rem] bg-gray-900 px-8">
@@ -12,29 +12,20 @@ function Hero() {
             <Typography 
               variant="h1" 
               color="white" 
-              className="mb-4" 
-              placeholder=""
-              onPointerEnterCapture={() => {}}
-              onPointerLeaveCapture={() => {}}
+              className="mb-4"
             >
               Car Shopping <br /> Just Got Smarter
             </Typography>
             <Typography
               variant="lead"
               className="mb-7 !text-white md:pr-16 xl:pr-28"
-              placeholder=""
-              onPointerEnterCapture={() => {}}
-              onPointerLeaveCapture={() => {}}
             >
               See a car you like? Simply take a picture.<br></br> We&apos;ll handle the rest
             </Typography>
             <Typography 
               className="mb-4" 
               color="white" 
-              variant="h6" 
-              placeholder=""
-              onPointerEnterCapture={() => {}}
-              onPointerLeaveCapture={() => {}}
+              variant="h6"
             >
               Get the app
             </Typography>
@@ -44,9 +35,6 @@ function Hero() {
                 color="white"
                 className="flex justify-center items-center gap-3"
                 onClick={() => window.open('https://apps.apple.com/us/app/car-hunter/id6478634228', '_blank')}
-                placeholder=""
-                onPointerEnterCapture={() => {}}
-                onPointerLeaveCapture={() => {}}
               >
                 <Image
                   width={256}
@@ -62,9 +50,6 @@ function Hero() {
                 color="white"
                 className="flex justify-center items-center gap-3"
                 onClick={() => window.open('https://play.google.com/store/apps/details?id=com.maxgorm.carhunter', '_blank')}
-                placeholder=""
-                onPointerEnterCapture={() => {}}
-                onPointerLeaveCapture={() => {}}
               >
                 <Image
                   width={256}
@@ -91,19 +76,13 @@ function Hero() {
           <Typography 
             variant="h3" 
             color="blue-gray" 
-            className="mb-3" 
-            placeholder=""
-            onPointerEnterCapture={() => {}}
-            onPointerLeaveCapture={() => {}}
+            className="mb-3"
           >
             AI Enhanced
           </Typography>
           <Typography
             variant="paragraph"
             className="font-normal !text-gray-500 lg:w-5/12"
-            placeholder=""
-            onPointerEnterCapture={() => {}}
-            onPointerLeaveCapture={() => {}}
           >
             Gone are the days of spotting a car you like and spending
             hours searching for it online. With CarSnap you can simply take a
@@ -115,4 +94,3 @@ function Hero() {
     </div>
   );
 }
-export default Hero;

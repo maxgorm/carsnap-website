@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import InfoCard from "@/components/info-card";
+import { InfoCard } from "@/components/info-card";
 import { Typography, Card, CardBody } from "@material-tailwind/react";
 
 const OPTIONS = [
@@ -39,19 +39,13 @@ export function MobileConvenience() {
           <Typography 
             variant="h2" 
             color="blue-gray" 
-            className="mb-4" 
-            placeholder=""
-            onPointerEnterCapture={() => {}}
-            onPointerLeaveCapture={() => {}}
+            className="mb-4"
           >
             Mobile Convenience
           </Typography>
           <Typography
             variant="lead"
             className="mb-5 px-4 text-left text-xl !text-gray-500 lg:px-0"
-            placeholder=""
-            onPointerEnterCapture={() => {}}
-            onPointerLeaveCapture={() => {}}
           >
             Access your learning materials on the go.
           </Typography>
@@ -68,4 +62,3 @@ export function MobileConvenience() {
     </section>
   );
 }
-export default MobileConvenience;

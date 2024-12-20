@@ -1,7 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
-import { Layout } from "@/components/layout";
+import { Providers } from "../components/providers";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -14,9 +14,9 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "NextJS Tailwind App Presentation Page",
+  title: "CarSnap",
   description:
-    "We are thrilled to offer you a Free App Presentation Template, a beautifully designed and user-friendly Tailwind CSS and Material Tailwind theme crafted specifically for app developers like you. The free app presentation template includes key features such as hero, features, FAQ, stats, and testimonial sections.",
+    "CarSnap is an AI-powered platform that helps you find the perfect car for your needs. Just snap a photo and let us find listings, reviews, specifications, and more for you!",
 };
 
 export default function RootLayout({
@@ -34,12 +34,12 @@ export default function RootLayout({
           crossOrigin="anonymous"
           referrerPolicy="no-referrer"
         />
-        <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+        <link rel="shortcut icon" href="/favicon-32x32.png" type="image/png" />
       </head>
       <body className={roboto.className}>
-        <Layout>
+        <Providers>
           {children}
-        </Layout>
+        </Providers>
       </body>
     </html>
   );

@@ -5,7 +5,6 @@ import Image from "next/image";
 import { IconButton } from "@material-tailwind/react";
 import { PlayIcon } from "@heroicons/react/24/outline";
 
-
 export function VideoIntro() {
   // return (
     // <div className="p-8">
@@ -26,6 +25,5 @@ export function VideoIntro() {
     //   </div>
     // </div>
   // );
+  return null;
 }
-
-export default VideoIntro;

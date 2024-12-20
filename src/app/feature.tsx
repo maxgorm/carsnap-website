@@ -10,7 +10,7 @@ import {
   CurrencyDollarIcon,
 } from "@heroicons/react/24/solid";
 
-import FeatureCard from "../components/feature-card";
+import { FeatureCard } from "@/components/feature-card";
 
 const FEATURES = [
   {
@@ -46,12 +46,6 @@ export function Features() {
         <Typography 
           color="blue-gray" 
           className="mb-2 font-bold uppercase"
-          placeholder=""
-          onPointerEnterCapture={() => {}}
-          onPointerLeaveCapture={() => {}}
-          title=""
-          slot=""
-          style={{}}
         >
           Make Guessing and Searching a Thing of the Past
         </Typography>
@@ -59,24 +53,12 @@ export function Features() {
           variant="h1" 
           color="blue-gray" 
           className="mb-4"
-          placeholder=""
-          onPointerEnterCapture={() => {}}
-          onPointerLeaveCapture={() => {}}
-          title=""
-          slot=""
-          style={{}}
         >
           Just Snap a Photo
         </Typography>
         <Typography
           variant="lead"
           className="mx-auto w-full px-4 !text-gray-500 lg:w-11/12 lg:px-8"
-          placeholder=""
-          onPointerEnterCapture={() => {}}
-          onPointerLeaveCapture={() => {}}
-          title=""
-          slot=""
-          style={{}}
         >
           We use state-of-the-art AI models to determine the make, model, and
           year of a car from a single photo.
@@ -90,4 +72,3 @@ export function Features() {
     </section>
   );
 }
-export default Features;

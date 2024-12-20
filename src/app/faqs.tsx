@@ -6,12 +6,7 @@ import { Typography, Card } from "@material-tailwind/react";
 const FAQS = [
   {
     title: "Is CarSnap free to use?",
-    desc: (
-      <>
-        CarSnap is 100% free to use. There are no paid features or premium plans. Simply download on iOS or Android and start snapping!
-        <div className="mt-2">*Advertisements may be present in the app.</div>
-      </>
-    ),
+    desc: "CarSnap is 100% free to use. There are no paid features or premium plans. Simply download on iOS or Android and start snapping! *Advertisements may be present in the app.",
   },
   {
     title: "Where do you source your listings from?",
@@ -32,38 +27,12 @@ export function Faqs() {
             variant="h1" 
             color="blue-gray" 
             className="mb-4"
-            placeholder=""
-            onPointerEnterCapture={() => {}}
-            onPointerLeaveCapture={() => {}}
-            suppressHydrationWarning={false}
-            id=""
-            lang=""
-            media=""
-            style={{}}
-            target=""
-            type=""
-            role=""
-            tabIndex={0}
-            href=""
           >
             Frequently asked questions
           </Typography>
           <Typography
             variant="lead"
             className="mx-auto mb-24 !text-gray-500 lg:w-3/5"
-            placeholder=""
-            onPointerEnterCapture={() => {}}
-            onPointerLeaveCapture={() => {}}
-            suppressHydrationWarning={false}
-            id=""
-            lang=""
-            media=""
-            style={{}}
-            target=""
-            type=""
-            role=""
-            tabIndex={0}
-            href=""
           >
             See answers to our most common questions, or feel free to contact
             us via our in-app contact button to ask your own questions.
@@ -76,56 +45,18 @@ export function Faqs() {
               key={title} 
               shadow={false} 
               color="transparent"
-              placeholder=""
-              onPointerEnterCapture={() => {}}
-              onPointerLeaveCapture={() => {}}
-              suppressHydrationWarning={false}
-              id=""
-              lang=""
-              style={{}}
-              role=""
-              tabIndex={0}
+              className="mt-6"
             >
               <Typography 
                 color="blue-gray" 
                 className="pb-6" 
                 variant="h4"
-                placeholder=""
-                onPointerEnterCapture={() => {}}
-                onPointerLeaveCapture={() => {}}
-                suppressHydrationWarning={false}
-                id=""
-                lang=""
-                media=""
-                style={{}}
-                target=""
-                type=""
-                role=""
-                tabIndex={0}
-                href=""
               >
                 {title}
               </Typography>
-              <div className="pt-2">
-                <Typography 
-                  className="font-normal !text-gray-500"
-                  placeholder=""
-                  onPointerEnterCapture={() => {}}
-                  onPointerLeaveCapture={() => {}}
-                  suppressHydrationWarning={false}
-                  id=""
-                  lang=""
-                  media=""
-                  style={{}}
-                  target=""
-                  type=""
-                  role=""
-                  tabIndex={0}
-                  href=""
-                >
-                  {desc}
-                </Typography>
-              </div>
+              <Typography className="font-normal !text-gray-500">
+                {desc}
+              </Typography>
             </Card>
           ))}
         </div>
@@ -133,5 +64,3 @@ export function Faqs() {
     </section>
   );
 }
-
-export default Faqs;

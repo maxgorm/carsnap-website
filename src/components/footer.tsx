@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
-import { Typography, IconButton, Button } from "@material-tailwind/react";
+import { Typography, Button } from "@material-tailwind/react";
 
-const LINKS: string[] = []; //"About Us", "Careers", "Press", "Blog", "Pricing"
+const LINKS: string[] = [];
 const CURRENT_YEAR = new Date().getFullYear();
 
 export function Footer() {
@@ -18,81 +18,39 @@ export function Footer() {
               variant="h5"
               color="white"
               className="mb-4"
-              placeholder=""
-              onPointerEnterCapture={() => {}}
-              onPointerLeaveCapture={() => {}}
-              translate="no"
-              slot=""
-              style={{}}
-              title=""
-              onClick={() => {}}
-              type=""
-              defaultChecked={false}
-              defaultValue=""
             >
               CarSnap
             </Typography>
             <Typography 
               color="white" 
               className="mb-12 font-normal"
-              placeholder=""
-              onPointerEnterCapture={() => {}}
-              onPointerLeaveCapture={() => {}}
-              translate="no"
-              slot=""
-              style={{}}
-              title=""
-              onClick={() => {}}
-              type=""
-              defaultChecked={false}
-              defaultValue=""
             >
               AI Enhanced Car Browsing
             </Typography>
-            <ul className="flex flex-wrap items-center justify-center md:justify-start">
-              {LINKS.map((link, idx) => (
-                <li key={link}>
-                  <Typography
-                    as="a"
-                    href="#"
-                    color="white"
-                    className={`py-1 font-medium transition-colors ${
-                      idx === 0 ? "pr-3" : "px-3"
-                    }`}
-                    placeholder=""
-                    onPointerEnterCapture={() => {}}
-                    onPointerLeaveCapture={() => {}}
-                    translate="no"
-                    slot=""
-                    style={{}}
-                    title=""
-                    onClick={() => {}}
-                    type=""
-                    defaultChecked={false}
-                    defaultValue=""
-                  >
-                    {link}
-                  </Typography>
-                </li>
-              ))}
-            </ul>
+            {LINKS.length > 0 && (
+              <ul className="flex flex-wrap items-center justify-center md:justify-start">
+                {LINKS.map((link, idx) => (
+                  <li key={link}>
+                    <Typography
+                      as="a"
+                      href="#"
+                      color="white"
+                      className={`py-1 font-medium transition-colors ${
+                        idx === 0 ? "pr-3" : "px-3"
+                      }`}
+                    >
+                      {link}
+                    </Typography>
+                  </li>
+                ))}
+              </ul>
+            )}
           </div>
           <div className="mt-8 w-full md:mt-0 md:w-auto">
             <Typography 
               variant="h6" 
               color="white" 
               className="mb-3"
-              placeholder=""
-              onPointerEnterCapture={() => {}}
-              onPointerLeaveCapture={() => {}}
-              translate="no"
-              slot=""
-              style={{}}
-              title=""
-              onClick={() => {}}
-              type=""
-              defaultChecked={false}
-              defaultValue=""
             >
               Get the app
             </Typography>
@@ -101,16 +59,6 @@ export function Footer() {
                 color="white"
                 className="flex items-center justify-center"
                 onClick={() => window.open('https://apps.apple.com/us/app/car-hunter/id6478634228', '_blank')}
-                placeholder=""
-                onPointerEnterCapture={() => {}}
-                onPointerLeaveCapture={() => {}}
-                translate="no"
-                slot=""
-                style={{}}
-                title=""
-                type="button"
-                defaultChecked={false}
-                defaultValue=""
               >
                 <Image
                   width={256}
@@ -125,16 +73,6 @@ export function Footer() {
                 color="white"
                 className="flex items-center justify-center"
                 onClick={() => window.open('https://play.google.com/store/apps/details?id=com.maxgorm.carhunter', '_blank')}
-                placeholder=""
-                onPointerEnterCapture={() => {}}
-                onPointerLeaveCapture={() => {}}
-                translate="no"
-                slot=""
-                style={{}}
-                title=""
-                type="button"
-                defaultChecked={false}
-                defaultValue=""
               >
                 <Image
                   width={256}
@@ -152,20 +90,8 @@ export function Footer() {
           <Typography
             color="white"
             className="text-center font-normal opacity-75"
-            placeholder=""
-            onPointerEnterCapture={() => {}}
-            onPointerLeaveCapture={() => {}}
-            translate="no"
-            slot=""
-            style={{}}
-            title=""
-            onClick={() => {}}
-            type=""
-            defaultChecked={false}
-            defaultValue=""
           >
             &copy; {CURRENT_YEAR} Made using{" "}
-            
             <a href="https://en.wikipedia.org/wiki/MIT_License" target="_blank" rel="noopener">
               MIT License
             </a>
@@ -196,5 +122,3 @@ export function Footer() {
     </footer>
   );
 }
-
-export default Footer;

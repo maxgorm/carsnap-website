@@ -3,7 +3,7 @@
 import React from "react";
 import { Typography, Card, CardBody, Avatar } from "@material-tailwind/react";
 import { UserIcon } from "@heroicons/react/24/solid";
-import TestimonialCard from "../components/testimonial-card";
+import { TestimonialCard } from "@/components/testimonial-card";
 
 const TESTIMONIALS = [
   {
@@ -41,36 +41,12 @@ export function Testimonials() {
             variant="h2" 
             color="blue-gray" 
             className="mb-2"
-            placeholder=""
-            onPointerEnterCapture={() => {}}
-            onPointerLeaveCapture={() => {}}
-            title=""
-            translate="no"
-            slot=""
-            style={{}}
-            onClick={() => {}}
-            key="testimonials-title"
-            defaultChecked={false}
-            defaultValue=""
-            suppressContentEditableWarning={false}
           >
             What CarSnap Users Say
           </Typography>
           <Typography
             variant="lead"
             className="mb-10 max-w-3xl text-center !text-gray-600"
-            placeholder=""
-            onPointerEnterCapture={() => {}}
-            onPointerLeaveCapture={() => {}}
-            title=""
-            translate="no"
-            slot=""
-            style={{}}
-            onClick={() => {}}
-            key="testimonials-subtitle"
-            defaultChecked={false}
-            defaultValue=""
-            suppressContentEditableWarning={false}
           >
             We take pride in providing a simple, easy, and elegant car browsing
             experience for our users! Hear what they have to say about us.
@@ -85,4 +61,3 @@ export function Testimonials() {
     </section>
   );
 }
-export default Testimonials;
