@@ -1,25 +1,23 @@
-"use client";
+import dynamic from 'next/dynamic';
 
-import { ClientLayout } from "@/components/client-layout";
-import { Navbar, Footer } from "@/components";
-import { Hero } from "./hero";
-import { VideoIntro } from "./video-intro";
-import { Features } from "./feature";
-import { MobileConvenience } from "./mobile-convenience";
-import { Testimonials } from "./testimonials";
-import { Faqs } from "./faqs";
-
-export default function Campaign() {
+// Server components for initial render
+function Shell() {
   return (
-    <ClientLayout>
-      <Navbar />
-      <Hero />
-      {/* <VideoIntro /> */}
-      <Features />
-      {/* <MobileConvenience /> */}
-      {/* <Testimonials /> */}
-      <Faqs />
-      <Footer />
-    </ClientLayout>
+    <div className="min-h-screen bg-gray-900">
+      <div className="h-[72px]" /> {/* Navbar placeholder */}
+      <main>
+        <div className="min-h-[600px]" /> {/* Content placeholder */}
+      </main>
+    </div>
   );
+}
+
+// Client components loaded dynamically
+const ClientPage = dynamic(() => import('../components/client-page'), {
+  ssr: false,
+  loading: () => <Shell />
+});
+
+export default function Page() {
+  return <ClientPage />;
 }

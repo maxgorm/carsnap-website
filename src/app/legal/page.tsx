@@ -1,15 +1,23 @@
-"use client";
+import dynamic from 'next/dynamic';
 
-import { ClientLayout } from "@/components/client-layout";
-import { LegalContent } from './components/legal-content';
-import { Navbar, Footer } from "@/components";
+// Server component for initial render
+function Shell() {
+  return (
+    <div className="min-h-screen bg-gray-900">
+      <div className="h-[72px]" /> {/* Navbar placeholder */}
+      <main>
+        <div className="min-h-[600px]" /> {/* Content placeholder */}
+      </main>
+    </div>
+  );
+}
+
+// Client component loaded dynamically
+const ClientLegal = dynamic(() => import('../../components/client-legal'), {
+  ssr: false,
+  loading: () => <Shell />
+});
 
 export default function Legal() {
-  return (
-    <ClientLayout>
-      <Navbar />
-      <LegalContent />
-      <Footer />
-    </ClientLayout>
-  );
+  return <ClientLegal />;
 }
