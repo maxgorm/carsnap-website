@@ -1,12 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { ThemeProvider } from "@material-tailwind/react";
 import { Navbar } from "./navbar";
 import { Footer } from "./footer";
 import { Hero } from "../app/hero";
 import { Features } from "../app/feature";
 import { Faqs } from "../app/faqs";
+import { ThemeLayout } from "./theme-layout";
 
 export default function ClientPage() {
   const [mounted, setMounted] = useState(false);
@@ -33,14 +33,12 @@ export default function ClientPage() {
   }
 
   return (
-    <ThemeProvider>
-      <div className="min-h-screen bg-gray-900">
-        <Navbar />
-        <Hero />
-        <Features />
-        <Faqs />
-        <Footer />
-      </div>
-    </ThemeProvider>
+    <ThemeLayout>
+      <Navbar />
+      <Hero />
+      <Features />
+      <Faqs />
+      <Footer />
+    </ThemeLayout>
   );
 }

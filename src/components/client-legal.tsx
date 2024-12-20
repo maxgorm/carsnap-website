@@ -1,10 +1,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { ThemeProvider } from "@material-tailwind/react";
 import { Navbar } from "./navbar";
 import { Footer } from "./footer";
 import { LegalContent } from "../app/legal/components/legal-content";
+import { ThemeLayout } from "./theme-layout";
 
 export default function ClientLegal() {
   const [mounted, setMounted] = useState(false);
@@ -31,12 +31,10 @@ export default function ClientLegal() {
   }
 
   return (
-    <ThemeProvider>
-      <div className="min-h-screen bg-gray-900">
-        <Navbar />
-        <LegalContent />
-        <Footer />
-      </div>
-    </ThemeProvider>
+    <ThemeLayout>
+      <Navbar />
+      <LegalContent />
+      <Footer />
+    </ThemeLayout>
   );
 }
