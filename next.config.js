@@ -1,4 +1,6 @@
 /** @type {import('next').NextConfig} */
+
+// Force new Vercel deployment
 const nextConfig = {
   transpilePackages: ['@material-tailwind/react'],
   webpack: (config) => {
