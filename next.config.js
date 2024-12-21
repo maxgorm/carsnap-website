@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  reactStrictMode: false,
   transpilePackages: ['@material-tailwind/react'],
   webpack: (config) => {
     config.resolve.alias = {
