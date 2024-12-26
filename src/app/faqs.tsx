@@ -8,18 +8,30 @@ const FAQS = [
     title: "Is CarSnap free to use?",
     desc: (
       <>
-        CarSnap is 100% free to use. There are no paid features or premium plans. Simply download on iOS or Android and start snapping!
-        <div className="mt-2">*Advertisements may be present in the app.</div>
+        <Typography className="font-normal !text-gray-500">
+          CarSnap is 100% free to use. There are no paid features or premium plans. Simply download on iOS or Android and start snapping!
+        </Typography>
+        <Typography className="font-normal !text-gray-500 mt-2">
+          *Advertisements may be present in the app.
+        </Typography>
       </>
     ),
   },
   {
     title: "Where do you source your listings from?",
-    desc: "Our listings are sourced from various websites across the web using an API. We do not own the listings and are not responsible for their accuracy or availability.",
+    desc: (
+      <Typography className="font-normal !text-gray-500">
+        Our listings are sourced from various websites across the web using an API. We do not own the listings and are not responsible for their accuracy or availability.
+      </Typography>
+    ),
   },
   {
     title: "Where do your source your specifications and value estimates from?",
-    desc: "We use established AI models to determine the specifications and value estimates of each car. These models are trained on a variety of data sources and are constantly updated to provide the most accurate information.",
+    desc: (
+      <Typography className="font-normal !text-gray-500">
+        We use established AI models to determine the specifications and value estimates of each car. These models are trained on a variety of data sources and are constantly updated to provide the most accurate information.
+      </Typography>
+    ),
   },
   
 ];
@@ -48,11 +60,7 @@ export function Faqs() {
               <Typography color="blue-gray" className="pb-6" variant="h4">
                 {title}
               </Typography>
-              <div className="pt-2">
-                <Typography className="font-normal !text-gray-500">
-                  {desc}
-                </Typography>
-              </div>
+              {desc}
             </Card>
           ))}
         </div>
