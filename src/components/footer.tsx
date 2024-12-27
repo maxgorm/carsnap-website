@@ -78,17 +78,25 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-16 flex flex-wrap items-center justify-center gap-y-4 gap-x-8 border-t border-gray-700 py-7 md:justify-between">
-          <Typography
-            color="white"
-            className="text-center font-normal opacity-75"
-          >
-            &copy; {CURRENT_YEAR} Made using{" "}
-            
-            <a href="https://en.wikipedia.org/wiki/MIT_License" target="_blank" rel="noopener">
-              MIT License
-            </a>
-            .
-          </Typography>
+          <div className="flex items-center gap-4">
+            <Typography
+              color="white"
+              className="text-center font-normal opacity-75"
+            >
+              &copy; {CURRENT_YEAR} Made using{" "}
+              <a href="https://en.wikipedia.org/wiki/MIT_License" target="_blank" rel="noopener">
+                MIT License
+              </a>
+            </Typography>
+            <Typography
+              as="a"
+              href="/legal"
+              color="white"
+              className="text-center font-normal opacity-75 hover:opacity-100"
+            >
+              Terms of Use
+            </Typography>
+          </div>
 
           <div className="flex gap-2">
             {/* Social Media Icons

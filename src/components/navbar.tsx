@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import {
   Navbar as MTNavbar,
   Collapse,
@@ -14,18 +15,31 @@ interface NavItemProps {
   href?: string;
 }
 function NavItem({ children, href }: NavItemProps) {
+  const isExternal = href?.startsWith('http');
   return (
     <li>
-      <Typography
-        as="a"
-        href={href || "#"}
-        target={href ? "_blank" : "_self"}
-        rel={href ? "noopener noreferrer" : undefined}
-        variant="small"
-        className="font-medium"
-      >
-        {children}
-      </Typography>
+      {isExternal ? (
+        <Typography
+          as="a"
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          variant="small"
+          className="font-medium"
+        >
+          {children}
+        </Typography>
+      ) : (
+        <Link href={href || "/"} passHref>
+          <Typography
+            as="span"
+            variant="small"
+            className="font-medium cursor-pointer"
+          >
+            {children}
+          </Typography>
+        </Link>
+      )}
     </li>
   );
 }
@@ -83,14 +97,12 @@ export function Navbar() {
           />
         </a>
         <ul
-          className={`ml-10 hidden items-center gap-6 lg:flex ${
+          className={`hidden items-center gap-6 lg:flex lg:justify-center lg:flex-1 ${
             isScrolling ? "text-gray-900" : "text-white"
           }`}
         >
-          <NavItem>Home</NavItem>
-          <NavItem href="https://carhunterlegal.carrd.co/">
-            Terms of Use
-          </NavItem>
+          <NavItem href="/">Home</NavItem>
+          <NavItem href="/legal">Terms of Use</NavItem>
         </ul>
         <div className="hidden gap-2 lg:flex lg:items-center">
           {/* Social Media Icons - Desktop
@@ -141,10 +153,8 @@ export function Navbar() {
       <Collapse open={open}>
         <div className="container mx-auto mt-4 rounded-lg border-t border-blue-gray-50 bg-white px-6 py-5">
           <ul className="flex flex-col gap-4 text-blue-gray-900">
-            <NavItem>Home</NavItem>
-            <NavItem href="https://carhunterlegal.carrd.co/">
-              Terms of Use
-            </NavItem>
+            <NavItem href="/">Home</NavItem>
+            <NavItem href="/legal">Terms of Use</NavItem>
           </ul>
           <div className="mt-4 flex items-center gap-2">
             {/* Social Media Icons - Mobile
