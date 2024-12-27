@@ -43,10 +43,10 @@ export function Features() {
   return (
     <section className="py-28 px-4">
       <div className="container mx-auto mb-20 text-center">
-        <Typography color="blue-gray" className="mb-2 font-bold uppercase">
+        <Typography className="mb-2 font-bold uppercase text-carsnap-blue">
           Make Guessing and Searching a Thing of the Past
         </Typography>
-        <Typography variant="h1" color="blue-gray" className="mb-4">
+        <Typography variant="h1" className="mb-4 text-carsnap-blue">
           Just Snap a Photo
         </Typography>
         <Typography

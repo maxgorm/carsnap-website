@@ -7,7 +7,7 @@ import { Button, Typography } from "@material-tailwind/react";
 function Hero() {
   return (
     <div className="relative min-h-screen w-full">
-      <header className="grid !min-h-[49rem] bg-gray-900 px-8">
+      <header className="grid !min-h-[49rem] bg-carsnap-blue px-8">
         <div className="container mx-auto mt-32 grid h-full w-full grid-cols-1 place-items-center lg:mt-14 lg:grid-cols-2">
           <div className="col-span-1">
             <Typography variant="h1" color="white" className="mb-4">
@@ -66,7 +66,7 @@ function Hero() {
       </header>
       <div className="mx-8 lg:mx-16 -mt-24 rounded-xl bg-white p-5 md:p-14 shadow-md">
         <div>
-          <Typography variant="h3" color="blue-gray" className="mb-3">
+          <Typography variant="h3" className="mb-3 text-carsnap-blue">
             AI Enhanced
           </Typography>
           <Typography

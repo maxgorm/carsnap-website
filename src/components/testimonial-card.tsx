@@ -18,7 +18,7 @@ export function TestimonialCard({
     <Card shadow={false} className="items-center text-center">
       <CardBody>
         <Avatar src={img} className="mb-3" alt={client} size="lg" />
-        <Typography variant="h6" color="blue-gray">
+        <Typography variant="h6" className="text-carsnap-blue">
           {client}
         </Typography>
         <Typography variant="small" className="mb-3 font-medium !text-gray-700">

@@ -15,10 +15,10 @@ import {
     return (
       <Card color="transparent" shadow={false}>
         <CardBody className="grid justify-start">
-          <div className="mb-4 grid h-12 w-12 place-content-center rounded-lg bg-gray-900 p-2.5 text-left text-white">
+          <div className="mb-4 grid h-12 w-12 place-content-center rounded-lg bg-carsnap-blue p-2.5 text-left text-white">
             <Icon className="h-6 w-6" />
           </div>
-          <Typography variant="h5" color="blue-gray" className="mb-2">
+          <Typography variant="h5" className="mb-2 text-carsnap-blue">
             {title}
           </Typography>
           <Typography className=" font-normal !text-gray-500">
@@ -30,4 +30,3 @@ import {
   }
 
   export default FeatureCard;
-  

@@ -41,7 +41,7 @@ export function Faqs() {
     <section className="px-8 py-20">
       <div className="container max-w-6xl mx-auto">
         <div className="text-center">
-          <Typography variant="h1" color="blue-gray" className="mb-4">
+          <Typography variant="h1" className="mb-4 text-carsnap-blue">
             Frequently asked questions
           </Typography>
           <Typography
@@ -57,7 +57,7 @@ export function Faqs() {
         <div className="grid gap-20 md:grid-cols-1 lg:grid-cols-3">
           {FAQS.map(({ title, desc }) => (
             <Card key={title} shadow={false} color="transparent">
-              <Typography color="blue-gray" className="pb-6" variant="h4">
+              <Typography className="pb-6 text-carsnap-blue" variant="h4">
                 {title}
               </Typography>
               {desc}
