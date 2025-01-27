@@ -22,7 +22,7 @@ export function Footer() {
               CarSnap
             </Typography>
             <Typography color="white" className="mb-12 font-normal">
-              AI Enhanced Car Browsing
+              Car shopping, simplified with AI.
             </Typography>
             <ul className="flex flex-wrap items-center justify-center md:justify-start">
               {LINKS.map((link, idx) => (
@@ -99,23 +99,24 @@ export function Footer() {
           </div>
 
           <div className="flex gap-2">
-            {/* Social Media Icons
-            <IconButton variant="text" color="white">
-              <i className="fa-brands fa-twitter text-2xl not-italic opacity-75"></i>
+            <IconButton 
+              variant="text" 
+              color="white" 
+              className="hover:opacity-100"
+              onClick={() => window.open('https://x.com/CarSnapApp', '_blank')}
+            >
+              <svg className="w-4 h-4 text-white opacity-75 hover:opacity-100" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
             </IconButton>
-            <IconButton variant="text" color="white">
-              <i className="fa-brands fa-linkedin text-2xl not-italic opacity-75"></i>
+            <IconButton 
+              variant="text" 
+              color="white"
+              className="hover:opacity-100"
+              onClick={() => window.open('https://www.instagram.com/carsnapapp/', '_blank')}
+            >
+              <i className="fa-brands fa-instagram text-lg text-white not-italic opacity-75 hover:opacity-100"></i>
             </IconButton>
-            <IconButton variant="text" color="white">
-              <i className="fa-brands fa-facebook text-2xl not-italic opacity-75"></i>
-            </IconButton>
-            <IconButton variant="text" color="white">
-              <i className="fa-brands fa-github text-2xl not-italic opacity-75"></i>
-            </IconButton>
-            <IconButton variant="text" color="white">
-              <i className="fa-brands fa-dribbble text-2xl not-italic opacity-75"></i>
-            </IconButton>
-            */}
           </div>
         </div>
       </div>

@@ -27,9 +27,9 @@ const FEATURES = [
   },
   {
     icon: PlayCircleIcon,
-    title: "Article and Video Reviews",
+    title: "Video Reviews",
     children:
-      "We know it can be hard to make a decision based on a photo. That's why we provide you with articles and videos of each car you snap a photo of from popular creators and publishers across the web.",
+      "We know it can be hard to make a decision based on a photo. That's why we provide you with video reviews of each car you snap a photo of from popular creators and publishers across the web.",
   },
   {
     icon: CurrencyDollarIcon,
