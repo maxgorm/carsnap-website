@@ -2,83 +2,114 @@ export default function Legal() {
   return (
     <div className="container mx-auto px-4 py-8 prose prose-lg max-w-none">
       <h2 className="font-bold text-2xl mb-4">Privacy Policy</h2>
-      <p>CarSnap L.L.C. built the CarSnap app as an Ad Supported app. This SERVICE is provided by Max Gorman at no cost and is intended for use as is.</p>
-      <p>This page is used to inform visitors regarding my policies with the collection, use, and disclosure of Personal Information if anyone decided to use my Service.</p>
-      <p>If you choose to use my Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that I collect is used for providing and improving the Service. I will not use or share your information with anyone except as described in this Privacy Policy.</p>
-      <p>The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which are accessible at Car Hunter unless otherwise defined in this Privacy Policy.</p>
-
-      <h2 className="font-bold text-2xl mt-8 mb-4">Account Deletion</h2>
-      <p>If you would like to delete your account, please send an email to <a href="mailto:max@carsnapapp.com">max@carsnapapp.com</a> with the subject &ldquo;Account Deletion&rdquo; and information regarding the account to be deleted contained in the body of the email.</p>
-
+      <p>This privacy policy applies to the CarSnap app (hereby referred to as &quot;Application&quot;) for mobile devices that was created by CARSNAP L.L.C. (hereby referred to as &quot;Service Provider&quot;) as an Ad Supported service. This service is intended for use &quot;AS IS&quot;.</p>
+      
       <h2 className="font-bold text-2xl mt-8 mb-4">Information Collection and Use</h2>
-      <p>For a better experience, while using our Service, I may require you to provide us with certain personally identifiable information. The information that I request will be retained on your device and is not collected by me in any way.</p>
-      <p>The app does use third-party services that may collect information used to identify you.</p>
-      <p>Link to the privacy policy of third-party service providers used by the app:</p>
+      <p>The Application collects information when you download and use it. This information may include information such as</p>
       <ul>
-        <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
-        <li><a href="https://support.google.com/admob/answer/6128543?hl=en" target="_blank" rel="noopener noreferrer">AdMob</a></li>
-        <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Google Analytics for Firebase</a></li>
+        <li>Your device&apos;s Internet Protocol address (e.g. IP address)</li>
+        <li>The pages of the Application that you visit, the time and date of your visit, the time spent on those pages</li>
+        <li>The time spent on the Application</li>
+        <li>The operating system you use on your mobile device</li>
       </ul>
 
-      <h2 className="font-bold text-2xl mt-8 mb-4">Log Data</h2>
-      <p>I want to inform you that whenever you use my Service, in a case of an error in the app I collect data and information (through third-party products) on your phone called Log Data. This Log Data may include information such as your device Internet Protocol (&ldquo;IP&rdquo;) address, device name, operating system version, the configuration of the app when utilizing my Service, the time and date of your use of the Service, and other statistics.</p>
+      <div>
+        <p>The Application collects your device&apos;s location, which helps the Service Provider determine your approximate geographical location and make use of in below ways:</p>
+        <ul>
+          <li>Geolocation Services: The Service Provider utilizes location data to provide features such as personalized content, relevant recommendations, and location-based services.</li>
+          <li>Analytics and Improvements: Aggregated and anonymized location data helps the Service Provider to analyze user behavior, identify trends, and improve the overall performance and functionality of the Application.</li>
+          <li>Third-Party Services: Periodically, the Service Provider may transmit anonymized location data to external services. These services assist them in enhancing the Application and optimizing their offerings.</li>
+        </ul>
+      </div>
 
-      <h2 className="font-bold text-2xl mt-8 mb-4">Cookies</h2>
-      <p>Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers. These are sent to your browser from the websites that you visit and are stored on your device&apos;s internal memory.</p>
-      <p>This Service does not use these &ldquo;cookies&rdquo; explicitly. However, the app may use third-party code and libraries that use &ldquo;cookies&rdquo; to collect information and improve their services. You have the option to either accept or refuse these cookies and know when a cookie is being sent to your device. If you choose to refuse our cookies, you may not be able to use some portions of this Service.</p>
+      <p>The Service Provider may use the information you provided to contact you from time to time to provide you with important information, required notices and marketing promotions.</p>
 
-      <h2 className="font-bold text-2xl mt-8 mb-4">Service Providers</h2>
-      <p>I may employ third-party companies and individuals due to the following reasons:</p>
+      <p>For a better experience, while using the Application, the Service Provider may require you to provide us with certain personally identifiable information, including but not limited to email, location, photos. The information that the Service Provider request will be retained by them and used as described in this privacy policy.</p>
+
+      <h2 className="font-bold text-2xl mt-8 mb-4">Third Party Access</h2>
+      <p>Only aggregated, anonymized data is periodically transmitted to external services to aid the Service Provider in improving the Application and their service. The Service Provider may share your information with third parties in the ways that are described in this privacy statement.</p>
+
+      <div>
+        <p>Please note that the Application utilizes third-party services that have their own Privacy Policy about handling data. Below are the links to the Privacy Policy of the third-party service providers used by the Application:</p>
+        <ul>
+          <li><a href="https://www.google.com/policies/privacy/" target="_blank" rel="noopener noreferrer">Google Play Services</a></li>
+          <li><a href="https://support.google.com/admob/answer/6128543?hl=en" target="_blank" rel="noopener noreferrer">AdMob</a></li>
+          <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Google Analytics for Firebase</a></li>
+          <li><a href="https://firebase.google.com/support/privacy/" target="_blank" rel="noopener noreferrer">Firebase Crashlytics</a></li>
+        </ul>
+      </div>
+
+      <p>The Service Provider may disclose User Provided and Automatically Collected Information:</p>
       <ul>
-        <li>To facilitate our Service;</li>
-        <li>To provide the Service on our behalf;</li>
-        <li>To perform Service-related services; or</li>
-        <li>To assist us in analyzing how our Service is used.</li>
+        <li>as required by law, such as to comply with a subpoena, or similar legal process;</li>
+        <li>when they believe in good faith that disclosure is necessary to protect their rights, protect your safety or the safety of others, investigate fraud, or respond to a government request;</li>
+        <li>with their trusted services providers who work on their behalf, do not have an independent use of the information we disclose to them, and have agreed to adhere to the rules set forth in this privacy statement.</li>
       </ul>
-      <p>I want to inform users of this Service that these third parties have access to their Personal Information. The reason is to perform the tasks assigned to them on our behalf. However, they are obligated not to disclose or use the information for any other purpose.</p>
+
+      <h2 className="font-bold text-2xl mt-8 mb-4">Opt-Out Rights</h2>
+      <p>You can stop all collection of information by the Application easily by uninstalling it. You may use the standard uninstall processes as may be available as part of your mobile device or via the mobile application marketplace or network.</p>
+
+      <h2 className="font-bold text-2xl mt-8 mb-4">Data Retention Policy</h2>
+      <p>The Service Provider will retain User Provided data for as long as you use the Application and for a reasonable time thereafter. If you&apos;d like them to delete User Provided Data that you have provided via the Application, please contact them at support@carsnapapp.com and they will respond in a reasonable time.</p>
+
+      <h2 className="font-bold text-2xl mt-8 mb-4">Children</h2>
+      <p>The Service Provider does not use the Application to knowingly solicit data from or market to children under the age of 13.</p>
+      <div>
+        <p>The Application does not address anyone under the age of 13. The Service Provider does not knowingly collect personally identifiable information from children under 13 years of age. In the case the Service Provider discover that a child under 13 has provided personal information, the Service Provider will immediately delete this from their servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact the Service Provider (support@carsnapapp.com) so that they will be able to take the necessary actions.</p>
+      </div>
 
       <h2 className="font-bold text-2xl mt-8 mb-4">Security</h2>
-      <p>I value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and I cannot guarantee its absolute security.</p>
+      <p>The Service Provider is concerned about safeguarding the confidentiality of your information. The Service Provider provides physical, electronic, and procedural safeguards to protect information the Service Provider processes and maintains.</p>
 
-      <h2 className="font-bold text-2xl mt-8 mb-4">Links to Other Sites</h2>
-      <p>This Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by me. Therefore, I strongly advise you to review the Privacy Policy of these websites. I have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.</p>
+      <h2 className="font-bold text-2xl mt-8 mb-4">Changes</h2>
+      <p>This Privacy Policy may be updated from time to time for any reason. The Service Provider will notify you of any changes to the Privacy Policy by updating this page with the new Privacy Policy. You are advised to consult this Privacy Policy regularly for any changes, as continued use is deemed approval of all changes.</p>
 
-      <h2 className="font-bold text-2xl mt-8 mb-4">API Clients</h2>
-      <p>The CarSnap application on both iOS and Android uses YouTube API services. By using the API clients in this application, you are agreeing to be bound by the <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener noreferrer">YouTube Terms of Service</a>.</p>
+      <p>This privacy policy is effective as of 2025-01-29</p>
 
-      <h2 className="font-bold text-2xl mt-8 mb-4">Children&apos;s Privacy</h2>
-      <p>These Services do not address anyone under the age of 13. I do not knowingly collect personally identifiable information from children under 13 years of age. In the case I discover that a child under 13 has provided me with personal information, I immediately delete this from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact me so that I will be able to do the necessary actions.</p>
-
-      <h2 className="font-bold text-2xl mt-8 mb-4">Changes to This Privacy Policy</h2>
-      <p>I may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Privacy Policy on this page.</p>
-      <p>This policy is effective as of 2024-02-23</p>
+      <h2 className="font-bold text-2xl mt-8 mb-4">Your Consent</h2>
+      <p>By using the Application, you are consenting to the processing of your information as set forth in this Privacy Policy now and as amended by us.</p>
 
       <h2 className="font-bold text-2xl mt-8 mb-4">Contact Us</h2>
-      <p>If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at <a href="mailto:contactcarhunterapp@gmail.com">contactcarhunterapp@gmail.com</a>.</p>
+      <p>If you have any questions regarding privacy while using the Application, or have questions about the practices, please contact the Service Provider via email at support@carsnapapp.com.</p>
 
-      <h2 className="font-bold text-2xl mt-8 mb-4">Terms &amp; Conditions</h2>
-      <p>By downloading or using the app, these terms will automatically apply to you &ndash; you should make sure therefore that you read them carefully before using the app. You&apos;re not allowed to copy or modify the app, any part of the app, or our trademarks in any way. You&apos;re not allowed to attempt to extract the source code of the app, and you also shouldn&apos;t try to translate the app into other languages or make derivative versions. The app itself, and all the trademarks, copyright, database rights, and other intellectual property rights related to it, still belong to Max Gorman.</p>
-      <p>Max Gorman is committed to ensuring that the app is as useful and efficient as possible. For that reason, we reserve the right to make changes to the app or to charge for its services, at any time and for any reason. We will never charge you for the app or its services without making it very clear to you exactly what you&apos;re paying for.</p>
-      <p>The Car Hunter app stores and processes personal data that you have provided to us, to provide my Service. It&apos;s your responsibility to keep your phone and access to the app secure. We therefore recommend that you do not jailbreak or root your phone, which is the process of removing software restrictions and limitations imposed by the official operating system of your device. It could make your phone vulnerable to malware/viruses/malicious programs, compromise your phone&apos;s security features and it could mean that the Car Hunter app won&apos;t work properly or at all.</p>
-      <p>The app does use third-party services that declare their Terms and Conditions.</p>
-      <p>Link to Terms and Conditions of third-party service providers used by the app:</p>
-      <ul>
-        <li><a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">Google Play Services</a></li>
-        <li><a href="https://developers.google.com/admob/terms" target="_blank" rel="noopener noreferrer">AdMob</a></li>
-        <li><a href="https://firebase.google.com/terms" target="_blank" rel="noopener noreferrer">Google Analytics for Firebase</a></li>
-      </ul>
-      <p>You should be aware that there are certain things that Max Gorman will not take responsibility for. Certain functions of the app will require the app to have an active internet connection. The connection can be Wi-Fi or provided by your mobile network provider, but Max Gorman cannot take responsibility for the app not working at full functionality if you don&apos;t have access to Wi-Fi, and you don&apos;t have any of your data allowance left.</p>
-      <p>If you&apos;re using the app outside of an area with Wi-Fi, you should remember that the terms of the agreement with your mobile network provider will still apply. As a result, you may be charged by your mobile provider for the cost of data for the duration of the connection while accessing the app, or other third-party charges. In using the app, you&apos;re accepting responsibility for any such charges, including roaming data charges if you use the app outside of your home territory (i.e. region or country) without turning off data roaming. If you are not the bill payer for the device on which you&apos;re using the app, please be aware that we assume that you have received permission from the bill payer for using the app.</p>
-      <p>Along the same lines, Max Gorman cannot always take responsibility for the way you use the app i.e. You need to make sure that your device stays charged &ndash; if it runs out of battery and you can&apos;t turn it on to avail the Service, Max Gorman cannot accept responsibility.</p>
-      <p>With respect to Max Gorman&apos;s responsibility for your use of the app, when you&apos;re using the app, it&apos;s important to bear in mind that although we endeavor to ensure that it is updated and correct at all times, we do rely on third parties to provide information to us so that we can make it available to you. Max Gorman accepts no liability for any loss, direct or indirect, you experience as a result of relying wholly on this functionality of the app.</p>
-      <p>At some point, we may wish to update the app. The app is currently available on Android &amp; iOS &ndash; the requirements for the both systems(and for any additional systems we decide to extend the availability of the app to) may change, and you&apos;ll need to download the updates if you want to keep using the app. Max Gorman does not promise that it will always update the app so that it is relevant to you and/or works with the Android &amp; iOS version that you have installed on your device. However, you promise to always accept updates to the application when offered to you, We may also wish to stop providing the app, and may terminate use of it at any time without giving notice of termination to you. Unless we tell you otherwise, upon any termination, (a) the rights and licenses granted to you in these terms will end; (b) you must stop using the app, and (if needed) delete it from your device.</p>
+      <hr className="my-12" />
 
-      <h2 className="font-bold text-2xl mt-8 mb-4">Changes to This Terms and Conditions</h2>
-      <p>I may update our Terms and Conditions from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Terms and Conditions on this page.</p>
-      <p>These terms and conditions are effective as of 2024-02-23</p>
+      <h2 className="font-bold text-2xl mb-4">Terms &amp; Conditions</h2>
+      <p>These terms and conditions apply to the CarSnap app (hereby referred to as &quot;Application&quot;) for mobile devices that was created by CARSNAP L.L.C. (hereby referred to as &quot;Service Provider&quot;) as an Ad Supported service.</p>
+
+      <p>Upon downloading or utilizing the Application, you are automatically agreeing to the following terms. It is strongly advised that you thoroughly read and understand these terms prior to using the Application. Unauthorized copying, modification of the Application, any part of the Application, or our trademarks is strictly prohibited. Any attempts to extract the source code of the Application, translate the Application into other languages, or create derivative versions are not permitted. All trademarks, copyrights, database rights, and other intellectual property rights related to the Application remain the property of the Service Provider.</p>
+
+      <p>The Service Provider is dedicated to ensuring that the Application is as beneficial and efficient as possible. As such, they reserve the right to modify the Application or charge for their services at any time and for any reason. The Service Provider assures you that any charges for the Application or its services will be clearly communicated to you.</p>
+
+      <p>The Application stores and processes personal data that you have provided to the Service Provider in order to provide the Service. It is your responsibility to maintain the security of your phone and access to the Application. The Service Provider strongly advise against jailbreaking or rooting your phone, which involves removing software restrictions and limitations imposed by the official operating system of your device. Such actions could expose your phone to malware, viruses, malicious programs, compromise your phone&apos;s security features, and may result in the Application not functioning correctly or at all.</p>
+
+      <div>
+        <p>Please note that the Application utilizes third-party services that have their own Terms and Conditions. Below are the links to the Terms and Conditions of the third-party service providers used by the Application:</p>
+        <ul>
+          <li><a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">Google Play Services</a></li>
+          <li><a href="https://developers.google.com/admob/terms" target="_blank" rel="noopener noreferrer">AdMob</a></li>
+          <li><a href="https://www.google.com/analytics/terms/" target="_blank" rel="noopener noreferrer">Google Analytics for Firebase</a></li>
+          <li><a href="https://firebase.google.com/terms/crashlytics" target="_blank" rel="noopener noreferrer">Firebase Crashlytics</a></li>
+        </ul>
+      </div>
+
+      <p>Please be aware that the Service Provider does not assume responsibility for certain aspects. Some functions of the Application require an active internet connection, which can be Wi-Fi or provided by your mobile network provider. The Service Provider cannot be held responsible if the Application does not function at full capacity due to lack of access to Wi-Fi or if you have exhausted your data allowance.</p>
+
+      <p>If you are using the application outside of a Wi-Fi area, please be aware that your mobile network provider&apos;s agreement terms still apply. Consequently, you may incur charges from your mobile provider for data usage during the connection to the application, or other third-party charges. By using the application, you accept responsibility for any such charges, including roaming data charges if you use the application outside of your home territory (i.e., region or country) without disabling data roaming. If you are not the bill payer for the device on which you are using the application, they assume that you have obtained permission from the bill payer.</p>
+
+      <p>Similarly, the Service Provider cannot always assume responsibility for your usage of the application. For instance, it is your responsibility to ensure that your device remains charged. If your device runs out of battery and you are unable to access the Service, the Service Provider cannot be held responsible.</p>
+
+      <p>In terms of the Service Provider&apos;s responsibility for your use of the application, it is important to note that while they strive to ensure that it is updated and accurate at all times, they do rely on third parties to provide information to them so that they can make it available to you. The Service Provider accepts no liability for any loss, direct or indirect, that you experience as a result of relying entirely on this functionality of the application.</p>
+
+      <p>The Service Provider may wish to update the application at some point. The application is currently available as per the requirements for the operating system (and for any additional systems they decide to extend the availability of the application to) may change, and you will need to download the updates if you want to continue using the application. The Service Provider does not guarantee that it will always update the application so that it is relevant to you and/or compatible with the particular operating system version installed on your device. However, you agree to always accept updates to the application when offered to you. The Service Provider may also wish to cease providing the application and may terminate its use at any time without providing termination notice to you. Unless they inform you otherwise, upon any termination, (a) the rights and licenses granted to you in these terms will end; (b) you must cease using the application, and (if necessary) delete it from your device.</p>
+
+      <h2 className="font-bold text-2xl mt-8 mb-4">Changes to These Terms and Conditions</h2>
+      <p>The Service Provider may periodically update their Terms and Conditions. Therefore, you are advised to review this page regularly for any changes. The Service Provider will notify you of any changes by posting the new Terms and Conditions on this page.</p>
+
+      <p>These terms and conditions are effective as of 2025-01-29</p>
 
       <h2 className="font-bold text-2xl mt-8 mb-4">Contact Us</h2>
-      <p>If you have any questions or suggestions about my Terms and Conditions, do not hesitate to contact me at <a href="mailto:contactcarhunterapp@gmail.com">contactcarhunterapp@gmail.com</a>.</p>
+      <p>If you have any questions or suggestions about the Terms and Conditions, please do not hesitate to contact the Service Provider at support@carsnapapp.com.</p>
     </div>
   );
 }
