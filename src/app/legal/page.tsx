@@ -1,6 +1,19 @@
+import Link from 'next/link';
+import Image from 'next/image';
+
 export default function Legal() {
   return (
-    <div className="container mx-auto px-4 py-8 prose prose-lg max-w-none">
+    <div className="container mx-auto px-4 pb-8 prose prose-lg max-w-none">
+      <Link href="/" className="block mb-0 w-40 -mt-3 no-underline">
+        <Image
+          src="/image/Car-Snap-Horizontal-Navy-Blue.png"
+          alt="CarSnap Logo"
+          width={160}
+          height={40}
+          priority
+          className="w-full h-auto"
+        />
+      </Link>
       <h2 className="font-bold text-2xl mb-4">Privacy Policy</h2>
       <p>This privacy policy applies to the CarSnap app (hereby referred to as &quot;Application&quot;) for mobile devices that was created by CARSNAP L.L.C. (hereby referred to as &quot;Service Provider&quot;) as an Ad Supported service. This service is intended for use &quot;AS IS&quot;.</p>
       
