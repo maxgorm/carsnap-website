@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function Legal() {
   return (
     <div className="container mx-auto px-4 pb-8 prose prose-lg max-w-none">
-      <Link href="/" className="block mb-0 w-40 -mt-3 no-underline">
+      <Link href="/" className="block mb-0 w-40 -mt-2 no-underline">
         <Image
           src="/image/Car-Snap-Horizontal-Navy-Blue.png"
           alt="CarSnap Logo"
