@@ -60,7 +60,7 @@ function Hero() {
             height={576}
             src="/image/NewCarSnapResizedMock.png"
             alt="team work"
-            className="col-span-1 my-20 h-full max-h-[30rem] -translate-y-32 md:max-h-[36rem] lg:my-0 lg:ml-auto lg:max-h-[40rem] lg:translate-y-0"
+            className="col-span-1 my-10 h-auto w-auto object-contain max-w-[300px] -translate-y-28 md:max-h-[36rem] md:max-w-none lg:my-0 lg:ml-auto lg:max-h-[40rem] lg:translate-y-0"
           />
         </div>
       </header>
