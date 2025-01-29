@@ -180,15 +180,6 @@ export function Navbar() {
               <i className="fa-brands fa-instagram text-base" />
             </IconButton>
             */}
-            <a href="https://www.material-tailwind.com/blocks" target="_blank" rel="noopener noreferrer">
-              <Button 
-                color="gray" 
-                size="sm" 
-                className="ml-auto"
-              >
-                Blocks
-              </Button>
-            </a>
           </div>
         </div>
       </Collapse>
