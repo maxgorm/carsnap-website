@@ -83,7 +83,7 @@ export function Navbar() {
     >
       <div className="container mx-auto flex items-center justify-between">
         <a
-          href="https://www.material-tailwind.com"
+          href="https://www.carsnapapp.com"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center"

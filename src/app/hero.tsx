@@ -27,7 +27,7 @@ function Hero() {
                 size="lg"
                 color="white"
                 className="flex justify-center items-center gap-3"
-                onClick={() => window.open('https://apps.apple.com/us/app/car-hunter/id6478634228', '_blank')}
+                onClick={() => window.open('https://apps.apple.com/us/app/carsnap-see-snap-drive/id6741093777', '_blank')}
               >
                 <Image
                   width={256}

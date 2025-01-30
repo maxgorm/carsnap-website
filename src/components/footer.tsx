@@ -13,7 +13,7 @@ export function Footer() {
           <div className="text-center md:text-left">
             <Typography
               as="a"
-              href="https://www.material-tailwind.com"
+              href="https://www.carsnapapp.com"
               target="_blank"
               variant="h5"
               color="white"
@@ -49,7 +49,7 @@ export function Footer() {
               <Button
                 color="white"
                 className="flex items-center justify-center"
-                onClick={() => window.open('https://apps.apple.com/us/app/car-hunter/id6478634228', '_blank')}
+                onClick={() => window.open('https://apps.apple.com/us/app/carsnap-see-snap-drive/id6741093777', '_blank')}
               >
                 <Image
                   width={256}
