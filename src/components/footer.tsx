@@ -76,8 +76,20 @@ export function Footer() {
               </Button>
             </div>
           </div>
+          <Typography
+            color="white"
+            className="w-full text-center font-normal opacity-75 md:text-left"
+          >
+            Questions? Comments? Concerns?{" "}
+            <a 
+              href="mailto:support@carsnapapp.com" 
+              className="hover:opacity-100"
+            >
+              Contact us at support@carsnapapp.com
+            </a>
+          </Typography>
         </div>
-        <div className="mt-16 flex flex-wrap items-center justify-center gap-y-4 gap-x-8 border-t border-gray-700 py-7 md:justify-between">
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-y-4 gap-x-8 border-t border-gray-700 py-7 md:justify-between">
           <div className="flex items-center gap-4">
             <Typography
               color="white"
