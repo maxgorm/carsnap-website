@@ -26,7 +26,7 @@ const FAQS = [
     ),
   },
   {
-    title: "Where do your source your specifications and value estimates from?",
+    title: "Where do you source your specifications and value estimates from?",
     desc: (
       <Typography className="font-normal !text-gray-500">
         We use established AI models to determine the specifications and value estimates of each car. These models are trained on a variety of data sources and are constantly updated to provide the most accurate information.
