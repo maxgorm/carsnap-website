@@ -63,7 +63,7 @@ export function Footer() {
               <Button
                 color="white"
                 className="flex items-center justify-center"
-                onClick={() => window.open('https://play.google.com/store/apps/details?id=com.maxgorm.carhunter', '_blank')}
+                onClick={() => window.open('https://play.google.com/store/apps/details?id=com.maxgorm.carsnap', '_blank')}
               >
                 <Image
                   width={256}
