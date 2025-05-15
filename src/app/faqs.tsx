@@ -8,19 +8,19 @@ const FAQS = [
     title: "Is CarSnap free to use?",
     desc: (
       <>
-        <Typography className="font-normal !text-gray-500">
-          CarSnap is 100% free to use. There are no paid features or premium plans. Simply download on iOS or Android and start snapping!
-        </Typography>
-        <Typography className="font-normal !text-gray-500 mt-2">
-          *Advertisements may be present in the app.
-        </Typography>
+         <Typography variant="paragraph" className="font-normal !text-gray-500">
+           CarSnap is 100% free to use. There are no paid features or premium plans. Simply download on iOS or Android and start snapping!
+         </Typography>
+         <Typography variant="paragraph" className="font-normal !text-gray-500 mt-2">
+           *Advertisements may be present in the app.
+         </Typography>
       </>
     ),
   },
   {
     title: "Where do you source your listings from?",
     desc: (
-      <Typography className="font-normal !text-gray-500">
+      <Typography variant="paragraph" className="font-normal !text-gray-500">
         Our listings are sourced from various websites across the web using an API. We do not own the listings and are not responsible for their accuracy or availability.
       </Typography>
     ),
@@ -28,7 +28,7 @@ const FAQS = [
   {
     title: "Where do you source your specifications and value estimates from?",
     desc: (
-      <Typography className="font-normal !text-gray-500">
+      <Typography variant="paragraph" className="font-normal !text-gray-500">
         We use established AI models to determine the specifications and value estimates of each car. These models are trained on a variety of data sources and are constantly updated to provide the most accurate information.
       </Typography>
     ),
