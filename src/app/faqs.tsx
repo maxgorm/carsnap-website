@@ -1,9 +1,9 @@
 "use client";
 
 import React from "react";
-import { Typography, Card } from "@material-tailwind/react";
+import { Typography, Card, TypographyProps } from "@material-tailwind/react";
 
-const FAQS = [
+const FAQS: { title: string; desc: React.ReactNode }[] = [
   {
     title: "Is CarSnap free to use?",
     desc: (
@@ -33,7 +33,7 @@ const FAQS = [
       </Typography>
     ),
   },
-  
+
 ];
 
 export function Faqs() {
