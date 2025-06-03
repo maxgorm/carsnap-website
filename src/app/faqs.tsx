@@ -10,9 +10,6 @@ const FAQS: { title: string; desc: React.ReactNode }[] = [
         <p className="font-normal text-gray-500">
           CarSnap is 100% free to use. There are no paid features or premium plans. Simply download on iOS or Android and start snapping!
         </p>
-        <p className="font-normal text-gray-500 mt-2">
-          *Advertisements may be present in the app.
-        </p>
       </div>
     ),
   },

@@ -18,7 +18,7 @@ export function Footer() {
               CarSnap
             </a>
             <p className="text-white mb-12 font-normal">
-              Car shopping, simplified with AI.
+              Car shopping, simplified with AI. <br></br>Join over 2,000 users and find your dream car with CarSnap.
             </p>
             <ul className="flex flex-wrap items-center justify-center md:justify-start">
               {LINKS.map((link, idx) => (
