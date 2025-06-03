@@ -58,9 +58,9 @@ function Hero() {
           <Image
             width={470}
             height={576}
-            src="/image/NewCarSnapResizedMock.png"
+            src="/image/twoPhoneCS.png"
             alt="team work"
-            className="col-span-1 my-10 h-auto w-auto object-contain max-w-[300px] -translate-y-28 md:max-h-[36rem] md:max-w-none lg:my-0 lg:ml-auto lg:max-h-[40rem] lg:translate-y-0"
+            className="col-span-1 my-10 w-full h-full object-contain -translate-y-28 md:max-w-none lg:my-0 lg:ml-auto lg:translate-y-0"
           />
         </div>
       </header>
