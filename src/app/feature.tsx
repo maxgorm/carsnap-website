@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import { Typography } from "@material-tailwind/react";
 
 import {
   MagnifyingGlassIcon,
@@ -43,19 +42,18 @@ export function Features() {
   return (
     <section className="py-28 px-4">
       <div className="container mx-auto mb-20 text-center">
-        <Typography className="mb-2 font-bold uppercase text-carsnap-blue">
+        <p className="mb-2 font-bold uppercase text-carsnap-blue">
           Make Guessing and Searching a Thing of the Past
-        </Typography>
-        <Typography variant="h1" className="mb-4 text-carsnap-blue">
+        </p>
+        <h1 className="mb-4 text-carsnap-blue text-4xl font-bold">
           Just Snap a Photo
-        </Typography>
-        <Typography
-          variant="lead"
-          className="mx-auto w-full px-4 !text-gray-500 lg:w-11/12 lg:px-8 "
+        </h1>
+        <p
+          className="mx-auto w-full px-4 text-gray-500 lg:w-11/12 lg:px-8 text-xl"
         >
           We use state-of-the-art AI models to determine the make, model, and
           year of a car from a single photo.
-        </Typography>
+        </p>
       </div>
       <div className="container mx-auto grid max-w-6xl grid-cols-1 gap-4 gap-y-12 md:grid-cols-2">
         {FEATURES.map((props, idx) => (

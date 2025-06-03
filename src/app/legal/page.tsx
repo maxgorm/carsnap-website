@@ -39,6 +39,10 @@ export default function Legal() {
 
       <p>For a better experience, while using the Application, the Service Provider may require you to provide us with certain personally identifiable information, including but not limited to email, location, photos. The information that the Service Provider request will be retained by them and used as described in this privacy policy.</p>
 
+      <div>
+        <p>The Application may use artificial intelligence (AI) to analyze user photos. These analyzed photos and related data may be collected and potentially sold for advertising purposes. This analysis helps the Service Provider improve the Application&apos;s functionality, provide personalized services, and generate revenue through targeted advertising partnerships.</p>
+      </div>
+
       <h2 className="font-bold text-2xl mt-8 mb-4">Third Party Access</h2>
       <p>Only aggregated, anonymized data is periodically transmitted to external services to aid the Service Provider in improving the Application and their service. The Service Provider may share your information with third parties in the ways that are described in this privacy statement.</p>
 
@@ -61,6 +65,15 @@ export default function Legal() {
 
       <h2 className="font-bold text-2xl mt-8 mb-4">Opt-Out Rights</h2>
       <p>You can stop all collection of information by the Application easily by uninstalling it. You may use the standard uninstall processes as may be available as part of your mobile device or via the mobile application marketplace or network.</p>
+
+      <div>
+        <p>Regarding AI analysis of user photos, you have multiple opt-out options:</p>
+        <ul>
+          <li>On iOS devices, you can decline the system permission dialogue when prompted for photo access.</li>
+          <li>On both iOS and Android devices, you can turn off data collection in the Application&apos;s settings menu.</li>
+          <li>Alternatively, uninstalling the Application will completely stop all data collection, including AI analysis of photos.</li>
+        </ul>
+      </div>
 
       <h2 className="font-bold text-2xl mt-8 mb-4">Data Retention Policy</h2>
       <p>The Service Provider will retain User Provided data for as long as you use the Application and for a reasonable time thereafter. If you&apos;d like them to delete User Provided Data that you have provided via the Application, please contact them at support@carsnapapp.com and they will respond in a reasonable time.</p>

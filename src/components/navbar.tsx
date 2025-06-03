@@ -1,13 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import {
-  Navbar as MTNavbar,
-  Collapse,
-  IconButton,
-  Typography,
-  Button,
-} from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 interface NavItemProps {
@@ -19,25 +12,19 @@ function NavItem({ children, href }: NavItemProps) {
   return (
     <li>
       {isExternal ? (
-        <Typography
-          as="a"
+        <a
           href={href}
           target="_blank"
           rel="noopener noreferrer"
-          variant="small"
-          className="font-medium"
+          className="font-medium text-sm"
         >
           {children}
-        </Typography>
+        </a>
       ) : (
         <Link href={href || "/"} passHref>
-          <Typography
-            as="span"
-            variant="small"
-            className="font-medium cursor-pointer"
-          >
+          <span className="font-medium cursor-pointer text-sm">
             {children}
-          </Typography>
+          </span>
         </Link>
       )}
     </li>
@@ -74,12 +61,10 @@ export function Navbar() {
   }, []);
 
   return (
-    <MTNavbar
-      fullWidth
-      shadow={false}
-      blurred={false}
-      color={isScrolling ? "white" : "transparent"}
-      className="fixed top-0 z-50 border-0 !py-1"
+    <nav
+      className={`fixed top-0 z-50 border-0 py-1 w-full ${
+        isScrolling ? "bg-white shadow-md" : "bg-transparent"
+      }`}
     >
       <div className="container mx-auto flex items-center justify-between">
         <a
@@ -104,51 +89,37 @@ export function Navbar() {
         </ul>
         <div className="hidden gap-2 lg:flex lg:items-center">
           {/* Social Media Icons - Desktop
-          <IconButton
-            variant="text"
-            color={isScrolling ? "gray" : "white"}
-            size="sm"
+          <button
+            className={`p-2 rounded ${isScrolling ? "text-gray-600 hover:text-gray-900" : "text-white hover:text-gray-200"}`}
           >
             <i className="fa-brands fa-twitter text-base" />
-          </IconButton>
-          <IconButton
-            variant="text"
-            color={isScrolling ? "gray" : "white"}
-            size="sm"
+          </button>
+          <button
+            className={`p-2 rounded ${isScrolling ? "text-gray-600 hover:text-gray-900" : "text-white hover:text-gray-200"}`}
           >
             <i className="fa-brands fa-facebook text-base" />
-          </IconButton>
-          <IconButton
-            variant="text"
-            color={isScrolling ? "gray" : "white"}
-            size="sm"
+          </button>
+          <button
+            className={`p-2 rounded ${isScrolling ? "text-gray-600 hover:text-gray-900" : "text-white hover:text-gray-200"}`}
           >
             <i className="fa-brands fa-instagram text-base" />
-          </IconButton>
+          </button>
           */}
-          {/* <a href="https://www.material-tailwind.com/blocks" target="_blank" rel="noopener noreferrer">
-            <Button 
-              color={isScrolling ? "gray" : "white"} 
-              size="sm"
-            >
-              Blocks
-            </Button>
-          </a> */}
         </div>
-        <IconButton
-          variant="text"
-          color={isScrolling ? "gray" : "white"}
+        <button
           onClick={handleOpen}
-          className="ml-auto inline-block lg:hidden"
+          className={`ml-auto inline-block lg:hidden p-2 rounded ${
+            isScrolling ? "text-gray-600 hover:text-gray-900" : "text-white hover:text-gray-200"
+          }`}
         >
           {open ? (
             <XMarkIcon strokeWidth={2} className="h-6 w-6" />
           ) : (
             <Bars3Icon strokeWidth={2} className="h-6 w-6" />
           )}
-        </IconButton>
+        </button>
       </div>
-      <Collapse open={open}>
+      {open && (
         <div className="container mx-auto mt-4 rounded-lg border-t border-blue-gray-50 bg-white px-6 py-5">
           <ul className="flex flex-col gap-4 text-blue-gray-900">
             <NavItem href="/">Home</NavItem>
@@ -156,32 +127,20 @@ export function Navbar() {
           </ul>
           <div className="mt-4 flex items-center gap-2">
             {/* Social Media Icons - Mobile
-            <IconButton 
-              variant="text" 
-              color="gray" 
-              size="sm"
-            >
+            <button className="p-2 rounded text-gray-600 hover:text-gray-900">
               <i className="fa-brands fa-twitter text-base" />
-            </IconButton>
-            <IconButton 
-              variant="text" 
-              color="gray" 
-              size="sm"
-            >
+            </button>
+            <button className="p-2 rounded text-gray-600 hover:text-gray-900">
               <i className="fa-brands fa-facebook text-base" />
-            </IconButton>
-            <IconButton 
-              variant="text" 
-              color="gray" 
-              size="sm"
-            >
+            </button>
+            <button className="p-2 rounded text-gray-600 hover:text-gray-900">
               <i className="fa-brands fa-instagram text-base" />
-            </IconButton>
+            </button>
             */}
           </div>
         </div>
-      </Collapse>
-    </MTNavbar>
+      )}
+    </nav>
   );
 }
 
