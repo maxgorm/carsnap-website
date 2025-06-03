@@ -16,7 +16,7 @@ function Hero() {
             <p
               className="mb-7 text-white md:pr-16 xl:pr-28 text-xl"
             >
-              See a car you like? Simply take a picture.<br></br> We'll handle the rest
+              See a car you like? Simply take a picture.<br></br> We&apos;ll handle the rest
             </p>
             <h6 className="mb-4 text-white text-base font-semibold">
               Get the app
@@ -73,7 +73,7 @@ function Hero() {
           >
             Gone are the days of spotting a car you like and spending
             hours searching for it online. With CarSnap you can simply take a
-            picture and we'll show you listings, specifications, reviews
+            picture and we&apos;ll show you listings, specifications, reviews
             and more!
           </p>
         </div>
