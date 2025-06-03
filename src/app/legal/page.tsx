@@ -3,8 +3,8 @@ import Image from 'next/image';
 
 export default function Legal() {
   return (
-    <div className="container mx-auto px-4 pb-8 prose prose-lg max-w-none">
-      <Link href="/" className="block mb-0 w-40 -mt-2 no-underline">
+    <div className="px-4 pb-8">
+      <Link href="/" className="block mb-4 w-40 no-underline -ml-4">
         <Image
           src="/image/Car-Snap-Horizontal-Navy-Blue.png"
           alt="CarSnap Logo"
@@ -14,7 +14,8 @@ export default function Legal() {
           className="w-full h-auto"
         />
       </Link>
-      <h2 className="font-bold text-2xl mb-4">Privacy Policy</h2>
+      <div className="container mx-auto prose prose-lg max-w-none">
+        <h2 className="font-bold text-2xl mb-4">Privacy Policy</h2>
       <p>This privacy policy applies to the CarSnap app (hereby referred to as &quot;Application&quot;) for mobile devices that was created by CARSNAP L.L.C. (hereby referred to as &quot;Service Provider&quot;) as an Ad Supported service. This service is intended for use &quot;AS IS&quot;.</p>
       
       <h2 className="font-bold text-2xl mt-8 mb-4">Information Collection and Use</h2>
@@ -34,6 +35,8 @@ export default function Legal() {
           <li>Third-Party Services: Periodically, the Service Provider may transmit anonymized location data to external services. These services assist them in enhancing the Application and optimizing their offerings.</li>
         </ul>
       </div>
+
+      <p>When users enable data sharing (enabled by default on Android or manually by accepting the ATT dialogue on iOS) their photos and searches are stored in firebase and may be sold to third parties. Photos that are not taken or uploaded in the CarSnap app (such as other photos in their camera roll) are not tracked.</p>
 
       <p>The Service Provider may use the information you provided to contact you from time to time to provide you with important information, required notices and marketing promotions.</p>
 
@@ -136,6 +139,7 @@ export default function Legal() {
 
       <h2 className="font-bold text-2xl mt-8 mb-4">Contact Us</h2>
       <p>If you have any questions or suggestions about the Terms and Conditions, please do not hesitate to contact the Service Provider at support@carsnapapp.com.</p>
+      </div>
     </div>
   );
 }
