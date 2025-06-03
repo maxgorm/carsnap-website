@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { Typography, IconButton, Button } from "@material-tailwind/react";
+import { Typography, IconButton } from "@material-tailwind/react";
 
 const LINKS: string[] = []; // "About Us", "Careers", "Press", "Blog", "Pricing"
 const CURRENT_YEAR = new Date().getFullYear();
@@ -46,9 +46,8 @@ export function Footer() {
               Get the app
             </Typography>
             <div className="flex flex-col gap-2">
-              <Button
-                color="white"
-                className="flex items-center justify-center"
+              <button
+                className="flex items-center justify-center bg-white text-gray-900 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors"
                 onClick={() => window.open('https://apps.apple.com/us/app/carsnap-see-snap-drive/id6741093777', '_blank')}
               >
                 <Image
@@ -59,10 +58,9 @@ export function Footer() {
                   alt="ios"
                 />
                 App Store
-              </Button>
-              <Button
-                color="white"
-                className="flex items-center justify-center"
+              </button>
+              <button
+                className="flex items-center justify-center bg-white text-gray-900 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors"
                 onClick={() => window.open('https://play.google.com/store/apps/details?id=com.maxgorm.carsnap', '_blank')}
               >
                 <Image
@@ -73,7 +71,7 @@ export function Footer() {
                   alt="ios"
                 />
                 Google Play
-              </Button>
+              </button>
             </div>
           </div>
           <Typography

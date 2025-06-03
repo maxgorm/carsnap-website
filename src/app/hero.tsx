@@ -1,8 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { Button } from "@material-tailwind/react";
-
 
 function Hero() {
   return (
@@ -22,42 +20,32 @@ function Hero() {
               Get the app
             </h6>
             <div className="flex flex-col gap-2 md:mb-2 md:w-10/12 md:flex-row">
-              <Button
-                size="lg"
-                color="white"
-                className="flex justify-center items-center gap-3"
+              <button
+                className="flex justify-center items-center gap-3 bg-white text-gray-900 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors"
                 onClick={() => window.open('https://apps.apple.com/us/app/carsnap-see-snap-drive/id6741093777', '_blank')}
-                placeholder=""
-                onPointerEnterCapture={undefined}
-                onPointerLeaveCapture={undefined}
               >
                 <Image
                   width={256}
                   height={256}
                   src="/logos/logo-apple.png"
-                  alt="metamask"
+                  alt="apple logo"
                   className="w-6 h-6"
                 />
                 App Store
-              </Button>
-              <Button
-                size="lg"
-                color="white"
-                className="flex justify-center items-center gap-3"
+              </button>
+              <button
+                className="flex justify-center items-center gap-3 bg-white text-gray-900 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors"
                 onClick={() => window.open('https://play.google.com/store/apps/details?id=com.maxgorm.carsnap', '_blank')}
-                placeholder=""
-                onPointerEnterCapture={undefined}
-                onPointerLeaveCapture={undefined}
               >
                 <Image
                   width={256}
                   height={256}
                   src="/logos/logo-google.png"
-                  alt="metamask"
+                  alt="google logo"
                   className="w-6 h-6"
                 />
                 Google Play
-              </Button>
+              </button>
             </div>
           </div>
           <Image
