@@ -19,9 +19,9 @@ function Hero() {
             <h6 className="mb-4 text-white text-base font-semibold">
               Get the app
             </h6>
-            <div className="flex flex-col gap-2 md:mb-2 md:w-10/12 md:flex-row">
+            <div className="flex flex-col gap-2 md:mb-2 md:w-10/12 md:flex-row relative z-10">
               <button
-                className="flex justify-center items-center gap-3 bg-white text-gray-900 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors"
+                className="flex justify-center items-center gap-3 bg-white text-gray-900 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors relative z-10"
                 onClick={() => window.open('https://apps.apple.com/us/app/carsnap-car-shopping-with-ai/id6741093777', '_blank')}
               >
                 <Image
@@ -34,7 +34,7 @@ function Hero() {
                 App Store
               </button>
               <button
-                className="flex justify-center items-center gap-3 bg-white text-gray-900 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors"
+                className="flex justify-center items-center gap-3 bg-white text-gray-900 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors relative z-10"
                 onClick={() => window.open('https://play.google.com/store/apps/details?id=com.maxgorm.carsnap', '_blank')}
               >
                 <Image
@@ -53,7 +53,7 @@ function Hero() {
             height={576}
             src="/image/twoPhoneCS.png"
             alt="team work"
-            className="col-span-1 my-10 w-[85%] h-[85%] object-contain -translate-y-28 md:max-w-none lg:my-0 lg:-ml-4 lg:translate-y-0"
+            className="col-span-1 mt-10 mb-16 w-[85%] h-[85%] object-contain -translate-y-24 md:max-w-none lg:my-0 lg:-ml-4 lg:translate-y-0"
           />
         </div>
       </header>
