@@ -27,6 +27,9 @@ function Hero() {
                 color="white"
                 className="flex justify-center items-center gap-3"
                 onClick={() => window.open('https://apps.apple.com/us/app/carsnap-see-snap-drive/id6741093777', '_blank')}
+                placeholder=""
+                onPointerEnterCapture={undefined}
+                onPointerLeaveCapture={undefined}
               >
                 <Image
                   width={256}
@@ -42,6 +45,9 @@ function Hero() {
                 color="white"
                 className="flex justify-center items-center gap-3"
                 onClick={() => window.open('https://play.google.com/store/apps/details?id=com.maxgorm.carsnap', '_blank')}
+                placeholder=""
+                onPointerEnterCapture={undefined}
+                onPointerLeaveCapture={undefined}
               >
                 <Image
                   width={256}
