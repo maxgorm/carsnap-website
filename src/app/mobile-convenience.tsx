@@ -3,7 +3,6 @@
 import React from "react";
 import Image from "next/image";
 import InfoCard from "@/components/info-card";
-import { Typography, Card, CardBody } from "@material-tailwind/react";
 
 const OPTIONS = [
   {
@@ -36,15 +35,12 @@ export function MobileConvenience() {
           alt="iphone-photo"
         />
         <div className="col-span-1 mx-auto max-w-lg px-4 lg:px-0">
-          <Typography variant="h2" className="mb-4 text-carsnap-blue">
+          <h2 className="mb-4 text-carsnap-blue text-3xl font-bold">
             Mobile Convenience
-          </Typography>
-          <Typography
-            variant="lead"
-            className="mb-5 px-4 text-left  text-xl !text-gray-500 lg:px-0  "
-          >
+          </h2>
+          <p className="mb-5 px-4 text-left text-xl text-gray-500 lg:px-0">
             Access your learning materials on the go.
-          </Typography>
+          </p>
 
           <div className="col-span-2 grid gap-5 grid-cols-2 ">
             {OPTIONS.map(({ title, description }) => (
