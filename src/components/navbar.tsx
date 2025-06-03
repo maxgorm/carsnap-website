@@ -62,7 +62,7 @@ export function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 z-50 border-0 py-1 w-full ${
+      className={`fixed top-0 z-50 border-0 py-1 w-full transition-colors duration-500 ${
         isScrolling ? "bg-white shadow-md" : "bg-transparent"
       }`}
     >

@@ -22,7 +22,7 @@ function Hero() {
             <div className="flex flex-col gap-2 md:mb-2 md:w-10/12 md:flex-row">
               <button
                 className="flex justify-center items-center gap-3 bg-white text-gray-900 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors"
-                onClick={() => window.open('https://apps.apple.com/us/app/carsnap-see-snap-drive/id6741093777', '_blank')}
+                onClick={() => window.open('https://apps.apple.com/us/app/carsnap-car-shopping-with-ai/id6741093777', '_blank')}
               >
                 <Image
                   width={256}
@@ -53,7 +53,7 @@ function Hero() {
             height={576}
             src="/image/twoPhoneCS.png"
             alt="team work"
-            className="col-span-1 my-10 w-full h-full object-contain -translate-y-28 md:max-w-none lg:my-0 lg:ml-auto lg:translate-y-0"
+            className="col-span-1 my-10 w-[85%] h-[85%] object-contain -translate-y-28 md:max-w-none lg:my-0 lg:-ml-4 lg:translate-y-0"
           />
         </div>
       </header>

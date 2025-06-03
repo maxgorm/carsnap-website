@@ -42,7 +42,7 @@ export function Footer() {
             <div className="flex flex-col gap-2">
               <button
                 className="flex items-center justify-center bg-white text-gray-900 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors"
-                onClick={() => window.open('https://apps.apple.com/us/app/carsnap-see-snap-drive/id6741093777', '_blank')}
+                onClick={() => window.open('https://apps.apple.com/us/app/carsnap-car-shopping-with-ai/id6741093777', '_blank')}
               >
                 <Image
                   width={256}
